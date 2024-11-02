@@ -1,3 +1,4 @@
+import BlogPostCard from "@/Components/Cards/BlogPostCard";
 import CategoriesCard from "@/Components/Cards/CategoriesCard";
 import TestimonialsCard from "@/Components/Cards/TestimonialsCard";
 import StyledText from "@/Components/StyledText";
@@ -31,6 +32,9 @@ export default function Home() {
 
       {/* Testimonials Card */}
       <TestimonialsCard text="Working at Hawksworth has provided the chance to solve complex challenges and develop impactful strategies for our clients. The team is always supportive, and each project brings new opportunities to grow. I feel valued and motivated every day." />
+
+      {/* Blog Post Card */}
+      <BlogPostCard />
     </div>
   );
 }
