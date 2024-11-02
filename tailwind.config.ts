@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        tiempos: "var(--font-tiempos)",
+        averta: "var(--font-averta)",
+        inter: "var(--font-inter)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
