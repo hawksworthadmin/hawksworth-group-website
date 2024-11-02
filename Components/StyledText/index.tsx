@@ -40,7 +40,7 @@ const StyledText = ({
           >
             <p
               className={classNames(
-                "text-primaryBlue text-lg font-bold",
+                "text-primaryBlue lg:text-lg text-sm font-bold",
                 textClassname
               )}
             >
@@ -52,7 +52,7 @@ const StyledText = ({
       ) : (
         <p
           className={classNames(
-            "text-lg",
+            "lg:text-lg text-sm",
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",

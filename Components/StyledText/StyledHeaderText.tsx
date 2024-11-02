@@ -8,8 +8,8 @@ export type StyledHeaderTextProps = {
 
 const StyledHeaderText = ({ text, subText }: StyledHeaderTextProps) => {
   return (
-    <div className="">
-      <StyledText fontType="secondary" textClassname="text-4xl">
+    <div>
+      <StyledText fontType="secondary" textClassname="lg:text-4xl text-[22px]">
         {text}
       </StyledText>
 
