@@ -1,6 +1,6 @@
 import React from "react";
-import StyledText from "../StyledText";
-import StyledHeaderText from "../StyledText/StyledHeaderText";
+import StyledText from "../common/StyledText";
+import StyledHeaderText from "../common/StyledText/StyledHeaderText";
 
 const GlassMorphismCard = () => {
   return (

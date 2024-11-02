@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
-import ArrowIcon from "../Svgs/ArrowIcon";
+import ArrowIcon from "@/app/assets/svg-icon/ArrowIcon";
 
 export type StyledTextProps = {
   linkText?: string;

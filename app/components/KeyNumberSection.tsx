@@ -1,5 +1,5 @@
 "use client";
-import KeyNumbersCard from "./KeyNumbersCard";
+import KeyNumbersCard from "./Cards/KeyNumbersCard";
 import KeyNumbersComponent from "../hooks/KeyNumbersData";
 
 export default function Home() {

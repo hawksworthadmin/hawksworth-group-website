@@ -1,5 +1,5 @@
 import React from "react";
-import StyledText from "../StyledText";
+import StyledText from "../common/StyledText";
 import Image from "next/image";
 
 const TestimonialsCard = ({ text }: { text: string }) => {

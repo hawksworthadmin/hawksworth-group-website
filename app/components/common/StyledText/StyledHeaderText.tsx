@@ -1,5 +1,5 @@
 import React from "react";
-import StyledText from "../StyledText";
+import StyledText from ".";
 import classNames from "classnames";
 
 export type StyledHeaderTextProps = {

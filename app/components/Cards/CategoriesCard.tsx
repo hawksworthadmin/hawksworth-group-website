@@ -1,5 +1,5 @@
 import React from "react";
-import StyledText from "../StyledText";
+import StyledText from "../common/StyledText";
 
 const CategoriesCard = ({ text }: { text: string }) => {
   return (
