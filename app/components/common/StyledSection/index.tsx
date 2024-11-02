@@ -17,7 +17,7 @@ const StyledSection = ({
         {
           "p-0": noPadding,
         },
-        containerClassname
+        containerClassname,
       )}
     >
       {children}

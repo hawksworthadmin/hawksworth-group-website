@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { cn } from '../../utils/styleUtilities';
+import React from "react";
+import { cn } from "../../utils/styleUtilities";
 
 interface ButtonProps {
-  label: string; 
-  onClick: React.MouseEventHandler<HTMLButtonElement>; 
+  label?: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
   variant: "primary" | "blue";
-  loading?: boolean; 
+  loading?: boolean;
   children?: React.ReactNode;
   className?: string;
 }
@@ -20,16 +20,16 @@ const Button = ({
   children,
   className,
 }: ButtonProps) => {
-   const variantStyle =
-     variant === "primary"
-       ? "bg-white text-textBlue"
-       : variant === "blue"
-       ? "bg-primaryBlue text-white"
-       : "bg-black text-white";
+  const variantStyle =
+    variant === "primary"
+      ? "bg-white text-textBlue"
+      : variant === "blue"
+        ? "bg-primaryBlue text-white"
+        : "bg-black text-white";
   const merged = cn(
     "rounded py-2.5 lg:px-8 px-6 font-semibold text-base diabled:opacity-75",
     className,
-    variantStyle
+    variantStyle,
   );
   return (
     <button onClick={onClick} className={merged} disabled={loading}>
@@ -38,4 +38,4 @@ const Button = ({
   );
 };
 
-export default Button
+export default Button;

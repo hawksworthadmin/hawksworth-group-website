@@ -7,7 +7,7 @@ export interface KeyNumbersProp {
   bgColor: string;
   titleColor: string;
   subtitleColor: string;
-  id?:number
+  id?: number;
 }
 
 const KeyNumbersCard = ({

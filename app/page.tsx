@@ -1,9 +1,6 @@
-import DisplayPage from "@/app/Components/DisplayPage";
+"use client";
+import DisplayPage from "./Components/DisplayPage";
 
 export default function Home() {
-  return (
-    <div className="w-screen h-screen">
-      <DisplayPage />
-    </div>
-  );
+  return <DisplayPage />;
 }
