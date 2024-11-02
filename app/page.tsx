@@ -1,4 +1,5 @@
 import CategoriesCard from "@/Components/Cards/CategoriesCard";
+import TestimonialsCard from "@/Components/Cards/TestimonialsCard";
 import StyledText from "@/Components/StyledText";
 import StyledHeaderText from "@/Components/StyledText/StyledHeaderText";
 
@@ -27,6 +28,9 @@ export default function Home() {
 
       {/* CategoriesCard */}
       <CategoriesCard text="Business Strategy & Planning" />
+
+      {/* Testimonials Card */}
+      <TestimonialsCard text="Working at Hawksworth has provided the chance to solve complex challenges and develop impactful strategies for our clients. The team is always supportive, and each project brings new opportunities to grow. I feel valued and motivated every day." />
     </div>
   );
 }

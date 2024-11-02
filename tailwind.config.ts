@@ -23,6 +23,9 @@ const config: Config = {
         lightGrey: "#747474",
         customBlack: "#1F1F1F",
       },
+      dropShadow: {
+        "3xl": "-6px 6px 4px rgba(0, 0, 0, 0.08)",
+      },
     },
   },
   plugins: [],

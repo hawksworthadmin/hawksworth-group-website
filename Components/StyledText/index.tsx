@@ -9,7 +9,6 @@ export type StyledTextProps = {
   isLink?: boolean;
   linkContainerClassname?: string;
   textClassname?: string;
-  containerClassname?: string;
   variant?: "default" | "secondary";
   fontType?: "default" | "secondary";
   stroke?: string;
@@ -22,16 +21,15 @@ const StyledText = ({
   isLink = false,
   linkContainerClassname,
   textClassname,
-  containerClassname,
   variant = "default",
   fontType = "default",
   stroke,
   children,
 }: StyledTextProps) => {
   return (
-    <div className={classNames("font-inter", containerClassname)}>
+    <>
       {isLink ? (
-        <Link href={href} className="cursor-pointer">
+        <Link href={href} className="cursor-pointer font-inter">
           <div
             className={classNames(
               "flex gap-1 items-center",
@@ -52,7 +50,7 @@ const StyledText = ({
       ) : (
         <p
           className={classNames(
-            "lg:text-lg text-sm",
+            "lg:text-lg text-sm font-inter",
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
@@ -63,7 +61,7 @@ const StyledText = ({
           {children}
         </p>
       )}
-    </div>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const StyledHeaderText = ({ text, subText }: StyledHeaderTextProps) => {
         {text}
       </StyledText>
 
-      <StyledText containerClassname="mt-2">{subText}</StyledText>
+      <StyledText textClassname="mt-2">{subText}</StyledText>
     </div>
   );
 };
