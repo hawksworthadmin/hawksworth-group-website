@@ -1,16 +1,10 @@
-'use client'
-
-import VisionSection from "./components/VisionSection";
-
-
+import DisplayPage from "@/Components/DisplayPage";
 
 export default function Home() {
 
   return (
-   
-    <div>
-      <VisionSection/>
-
-  </div>
+    <div className="w-screen h-screen">
+      <DisplayPage />
+    </div>
   );
 }

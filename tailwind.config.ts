@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        tiempos: "var(--font-tiempos)",
+        averta: "var(--font-averta)",
+        inter: "var(--font-inter)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -19,6 +24,9 @@ const config: Config = {
         darkGrey: "#343434",
         lightGrey: "#747474",
         customBlack: "#1F1F1F",
+      },
+      dropShadow: {
+        "3xl": "-6px 6px 4px rgba(0, 0, 0, 0.08)",
       },
     },
   },
