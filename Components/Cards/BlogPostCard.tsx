@@ -15,14 +15,12 @@ const BlogPostCard = () => {
         />
       </div>
 
-      <div className="p-4 lg:text-base text-sm">
-        <div className="flex items-center space-x-2">
+      <div className="lg:text-base text-sm">
+        <div className="flex items-center space-x-[6px] text-nowrap">
           <StyledText textClassname="text-[#347F62] font-semibold">
             Business Strategy
-          </StyledText>
-          <span>•</span>
-          <StyledText>22 Sept, 2024</StyledText>
-          <span>•</span>
+          </StyledText>{" "}
+          <span>•</span> <StyledText> 22 Sept, 2024 </StyledText> <span>•</span>{" "}
           <StyledText>3 min read</StyledText>
         </div>
 
