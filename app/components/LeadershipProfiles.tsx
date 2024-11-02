@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import React from 'react'
-import { LeadershipData } from '../hooks/LeadershipData';
+import Image from "next/image";
+import React from "react";
+import { LeadershipData } from "../hooks/LeadershipData";
 
 const LeadershipProfiles = () => {
   return (
@@ -12,8 +12,8 @@ const LeadershipProfiles = () => {
               src={leader.image}
               alt="logo"
               layout="fill"
-              objectFit="contain"
-              className="rounded-sm object-contain w-full h-full"
+              objectFit="cover"
+              className="rounded-sm object-cover w-full h-full"
             />
           </div>
           <p className="font-semibold text-2xl text-secondaryYellow text-center lg:text-start ">
@@ -26,6 +26,6 @@ const LeadershipProfiles = () => {
       ))}
     </section>
   );
-}
+};
 
-export default LeadershipProfiles
+export default LeadershipProfiles;

@@ -33,13 +33,13 @@ const StyledText = ({
           <div
             className={classNames(
               "flex gap-1 items-center",
-              linkContainerClassname
+              linkContainerClassname,
             )}
           >
             <p
               className={classNames(
                 "text-primaryBlue lg:text-lg text-sm font-bold",
-                textClassname
+                textClassname,
               )}
             >
               {linkText}
@@ -55,7 +55,7 @@ const StyledText = ({
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
             },
-            textClassname
+            textClassname,
           )}
         >
           {children}

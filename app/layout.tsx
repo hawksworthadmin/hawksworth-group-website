@@ -5,7 +5,7 @@ import "./globals.css";
 
 const averta = localFont({
   src: "./fonts/Averta/AvertaCY.otf",
-  // weight: "100 900",
+  weight: "100 900",
   variable: "--font-averta",
 });
 
