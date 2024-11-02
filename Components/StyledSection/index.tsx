@@ -11,7 +11,7 @@ const StyledSection = ({
   containerClassname?: string;
 }) => {
   return (
-    <div
+    <section
       className={classNames(
         "px-6 lg:px-[120px]",
         {
@@ -21,7 +21,7 @@ const StyledSection = ({
       )}
     >
       {children}
-    </div>
+    </section>
   );
 };
 

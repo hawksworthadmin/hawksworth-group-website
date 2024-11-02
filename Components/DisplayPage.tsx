@@ -5,6 +5,7 @@ import StyledHeaderText from "./StyledText/StyledHeaderText";
 import CategoriesCard from "./Cards/CategoriesCard";
 import TestimonialsCard from "./Cards/TestimonialsCard";
 import BlogPostCard from "./Cards/BlogPostCard";
+import GlassMorphismCard from "./Cards/GlassMorphismCard";
 
 const DisplayPage = () => {
   return (
@@ -37,6 +38,9 @@ const DisplayPage = () => {
 
       {/* Blog Post Card */}
       <BlogPostCard />
+
+      {/* Subsidiaries Card --- This will be styled to accept children in the future */}
+      <GlassMorphismCard />
     </StyledSection>
   );
 };
