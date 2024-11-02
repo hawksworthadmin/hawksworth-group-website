@@ -1,0 +1,31 @@
+import Image from 'next/image'
+import React from 'react'
+import { LeadershipData } from '../hooks/LeadershipData';
+
+const LeadershipProfiles = () => {
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-2 border justify-items-center gap-14">
+      {LeadershipData.map((leader, index) => (
+        <section key={index}>
+          <div className="rounded-sm w-[20.375rem] h-[19.063rem] lg:w-[37.875rem] lg:h-[39.063rem] relative overflow-hidden mb-4 lg:mb-8">
+            <Image
+              src={leader.image}
+              alt="logo"
+              layout="fill"
+              objectFit="contain"
+              className="rounded-sm object-contain w-full h-full"
+            />
+          </div>
+          <p className="font-semibold text-2xl text-secondaryYellow text-center lg:text-start ">
+            {leader.Name}
+          </p>
+          <p className="text-darkGrey font-normal text-xl text-center lg:text-start">
+            {leader.Designation}
+          </p>
+        </section>
+      ))}
+    </section>
+  );
+}
+
+export default LeadershipProfiles
