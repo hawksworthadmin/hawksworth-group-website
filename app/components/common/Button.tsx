@@ -10,6 +10,7 @@ interface ButtonProps {
   loading?: boolean;
   children?: React.ReactNode;
   className?: string;
+  borderStyleClassName?: string;
 }
 
 const Button = ({
@@ -19,6 +20,7 @@ const Button = ({
   variant = "primary",
   children,
   className,
+  borderStyleClassName,
 }: ButtonProps) => {
   const variantStyle =
     variant === "primary"
@@ -27,13 +29,17 @@ const Button = ({
         ? "bg-primaryBlue text-white"
         : "bg-black text-white";
   const merged = cn(
-    "rounded py-2.5 lg:px-8 px-6 font-semibold text-base diabled:opacity-75",
+    "rounded p-[1px] font-semibold text-base diabled:opacity-75 cursor-pointer focus:outline-none",
     className,
     variantStyle,
   );
   return (
     <button onClick={onClick} className={merged} disabled={loading}>
-      {children || label}
+      <span
+        className={`w-full h-full rounded flex items-center justify-center py-2.5 lg:px-8 px-6 ${borderStyleClassName}`}
+      >
+        {children || label}
+      </span>
     </button>
   );
 };

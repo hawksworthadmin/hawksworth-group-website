@@ -4,7 +4,7 @@ import { LeadershipData } from "../hooks/LeadershipData";
 
 const LeadershipProfiles = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 border justify-items-center gap-14">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-x-[8rem] gap-y-14 place-items-center  w-full">
       {LeadershipData.map((leader, index) => (
         <section key={index}>
           <div className="rounded-sm w-[20.375rem] h-[19.063rem] lg:w-[37.875rem] lg:h-[39.063rem] relative overflow-hidden mb-4 lg:mb-8">

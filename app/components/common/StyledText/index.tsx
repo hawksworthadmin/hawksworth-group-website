@@ -29,10 +29,10 @@ const StyledText = ({
   return (
     <>
       {isLink ? (
-        <Link href={href} className="cursor-pointer font-inter">
+        <Link href={href} className="cursor-pointer font-inter ">
           <div
             className={classNames(
-              "flex gap-1 items-center",
+              "inline-flex gap-1 items-center hover:border-b-2 border-primaryYellow",
               linkContainerClassname,
             )}
           >

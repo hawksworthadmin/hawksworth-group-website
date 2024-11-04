@@ -2,10 +2,10 @@
 import KeyNumbersCard from "./Cards/KeyNumbersCard";
 import KeyNumbersComponent from "../hooks/KeyNumbersData";
 
-export default function Home() {
+export default function KeyNumbersSection() {
   const KeyNumbersData = KeyNumbersComponent();
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2">
+    <section className="grid grid-cols-1 md:grid-cols-2 border-t border-[#AD840029] mt-16">
       {KeyNumbersData.map((card, index) => (
         <KeyNumbersCard
           key={index}

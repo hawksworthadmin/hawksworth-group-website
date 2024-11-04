@@ -7,26 +7,12 @@ import StyledHeaderText from "./common/StyledText/StyledHeaderText";
 import CategoriesCard from "./Cards/CategoriesCard";
 import TestimonialsCard from "./Cards/TestimonialsCard";
 import BlogPostCard from "./Cards/BlogPostCard";
-import GlassMorphismCard from "./Cards/GlassMorphismCard";
-import HeroSection from "./common/HeroSection";
-import Button from "./common/Button";
 
 const DisplayPage = () => {
   return (
     <>
       <section>
         {" "}
-        <HeroSection
-          imageUrl="/assets/svg/hero.svg"
-          header="Empowering Businesses with Innovative Solutions Across "
-          subheader="Finance, Insights, Capital, and Ventures."
-          description="Hawksworth Group is a global leader in business advisory, investment, and innovation, serving industries with forward-thinking strategies and comprehensive services."
-          button=<Button
-            label="Explore our subsidiaries"
-            onClick={() => console.log("hello")}
-            variant="primary"
-          />
-        />
         <StyledSection>
           {/* StyledText for default font */}
           <StyledText>
@@ -58,7 +44,6 @@ const DisplayPage = () => {
           <BlogPostCard />
 
           {/* Subsidiaries Card --- This will be styled to accept children in the future */}
-          <GlassMorphismCard />
         </StyledSection>
       </section>
     </>
