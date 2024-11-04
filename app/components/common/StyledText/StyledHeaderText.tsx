@@ -1,12 +1,12 @@
 import React from "react";
-import StyledText from ".";
-import classNames from "classnames";
+import { cn } from "@/app/utils/styleUtilities";
 
 export type StyledHeaderTextProps = {
   text: string;
   subText?: string;
   textClassname?: string;
   subTextClassname?: string;
+  className?: string;
 };
 
 const StyledHeaderText = ({
@@ -14,19 +14,13 @@ const StyledHeaderText = ({
   subText,
   textClassname,
   subTextClassname,
+  className,
 }: StyledHeaderTextProps) => {
   return (
-    <div>
-      <StyledText
-        fontType="secondary"
-        textClassname={classNames("lg:text-4xl text-[22px]", textClassname)}
-      >
-        {text}
-      </StyledText>
+    <div className={cn("w-full flex flex-col items-center", className)}>
+      <p className={cn("lg:text-4xl text-[22px]", textClassname)}>{text}</p>
 
-      <StyledText textClassname={classNames("mt-2", subTextClassname)}>
-        {subText}
-      </StyledText>
+      <p className={cn("mt-2", subTextClassname)}>{subText}</p>
     </div>
   );
 };
