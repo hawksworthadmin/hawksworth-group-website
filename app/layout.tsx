@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import PageLayout from "@/components/layout/PageLayout";
 
 const averta = localFont({
   src: "./fonts/Averta/AvertaCY.otf",
@@ -55,7 +56,7 @@ export default function RootLayout({
       <body
         className={`${averta.variable} ${inter.variable} ${tiempos.variable} antialiased`}
       >
-        {children}
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );

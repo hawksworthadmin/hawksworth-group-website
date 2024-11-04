@@ -1,3 +1,5 @@
+"use client";
+
 import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
@@ -12,7 +14,9 @@ export type StyledTextProps = {
   variant?: "default" | "secondary";
   fontType?: "default" | "secondary";
   stroke?: string;
+  hoverStroke?: string;
   children?: React.ReactNode;
+  hasArrowIcon?: boolean;
 };
 
 const StyledText = ({
@@ -23,8 +27,10 @@ const StyledText = ({
   textClassname,
   variant = "default",
   fontType = "default",
-  stroke,
+  stroke = "#FFFFFF",
+  hoverStroke = "#FFFFFF",
   children,
+  hasArrowIcon = true,
 }: StyledTextProps) => {
   return (
     <>
@@ -44,7 +50,21 @@ const StyledText = ({
           >
             {linkText}
           </p>
-          <ArrowIcon stroke={stroke} />
+          {hasArrowIcon && (
+            <ArrowIcon
+              stroke={stroke}
+              className={`transition-colors duration-300 group-hover:stroke-[${hoverStroke}]`}
+              style={{
+                stroke: stroke,
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as SVGElement).style.stroke = hoverStroke;
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as SVGElement).style.stroke = stroke;
+              }}
+            />
+          )}
         </Link>
       ) : (
         <p

@@ -31,7 +31,7 @@ const config: Config = {
         "custom-light": "0px 4px 6px rgba(0, 0, 0, 0.05)",
       },
       backgroundImage: {
-        "blue-gradient": "linear-gradient(120deg, #021859 0%, #0434BF 100%)",
+        "blue-gradient": "linear-gradient(120deg, #0434BF -70%, #021859 100%)",
         "yellow-white-gradient":
           "linear-gradient(90deg, #C49700 0%, #FFFFFF 100%)",
       },

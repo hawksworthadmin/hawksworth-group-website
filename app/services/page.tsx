@@ -36,35 +36,39 @@ const Services = () => {
         </div>
       </StyledSection>
 
-      <div className="bg-blue-gradient">
-        <StyledSection containerClassname="flex items-center justify-center">
-          <StyledHeaderText
-            text=" Discover how we can help your business. Explore our subsidiaries for more detailed information on specific services."
-            textClassname="text-white text-center lg:text-4xl text-[28px]"
-            containerClassname="lg:w-1/2"
-          />
-        </StyledSection>
+      <StyledSection containerClassname="flex items-center justify-center bg-blue-gradient">
+        <StyledHeaderText
+          text=" Discover how we can help your business. Explore our subsidiaries for more detailed information on specific services."
+          textClassname="text-white text-center lg:text-4xl text-[28px]"
+          containerClassname="lg:w-1/2"
+        />
+      </StyledSection>
 
-        <div className="h-[3px] w-full bg-yellow-white-gradient" />
+      <div className="h-[3px] w-full bg-yellow-white-gradient" />
 
-        <div className="flex flex-col lg:flex-row">
-          {subServices.map((subserv) => (
-            <div
-              key={subserv.id.toString()}
-              className="lg:h-[400px] h-[320px] w-full flex flex-col px-6 py-8 lg:p-10 justify-between text-white border-[0.5px] border-secondaryYellow/25"
-            >
+      <div className="flex flex-col lg:flex-row bg-primaryBlue">
+        {subServices.map((subserv) => (
+          <div
+            key={subserv.id.toString()}
+            className="lg:h-[400px] h-[320px] w-full flex flex-col px-6 py-8 lg:p-10 justify-between text-white hover:text-darkGrey border-[0.5px] border-secondaryYellow/25 group transition-all delay-75 duration-300 ease-in-out hover:bg-white"
+          >
+            <div className="">
               <StyledText textClassname="lg:text-2xl text-xl font-bold">
                 {subserv.title}
               </StyledText>
-              <StyledText
-                linkText="View more"
-                isLink
-                textClassname="text-white text-base"
-                stroke="white"
-              />
+              <StyledText textClassname="!text-sm mt-2 hidden group-hover:block">
+                {subserv.description}
+              </StyledText>
             </div>
-          ))}
-        </div>
+
+            <StyledText
+              linkText="View more →"
+              isLink
+              textClassname="text-white text-base group-hover:text-secondaryYellow"
+              hasArrowIcon={false}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

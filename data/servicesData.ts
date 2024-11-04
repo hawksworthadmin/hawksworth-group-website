@@ -37,17 +37,25 @@ export const subServices = [
   {
     id: 1,
     title: "Hawksworth Advisors",
+    description:
+      "At Hawksworth Advisors, we work closely with businesses across industries, offering bespoke strategies that address their most critical challenges. Whether you’re looking for financial advisory, business transformation, or strategic guidance, our team of expert consultants is here to help you succeed.",
   },
   {
     id: 2,
     title: "Hawksworth Insights",
+    description:
+      "We deliver in-depth research and data analytics to empower businesses with the intelligence needed to navigate challenges and seize opportunities. As part of Hawksworth Group, we provide actionable intelligence and data-driven insights to help organizations make informed decisions in a complex and rapidly evolving world.",
   },
   {
     id: 3,
     title: "Hawksworth Capital",
+    description:
+      "At Hawksworth Capital, we specialize in providing expert advisory services tailored to meet the unique financial needs of businesses. Our team of seasoned professionals is committed to delivering strategic solutions that drive financial excellence and sustainable growth.",
   },
   {
     id: 4,
     title: "Hawksworth Venture",
+    description:
+      "We specialize in nurturing startups and fostering entrepreneurial success through our comprehensive incubation and investment programs. Join our incubation programs, secure funding, and gain mentorship to turn your innovative ideas into successful ventures.",
   },
 ];

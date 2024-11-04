@@ -1,5 +1,3 @@
-import DisplayPage from "@/components/DisplayPage";
-
 export default function Home() {
-  return <DisplayPage />;
+  return <div>Home Page</div>;
 }

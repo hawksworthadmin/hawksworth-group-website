@@ -14,7 +14,7 @@ const TestimonialsCard = ({
   testimonial: string;
 }) => {
   return (
-    <div className="drop-shadow-3xl p-6 lg:p-7 bg-[#FBFBFB] rounded">
+    <div className="drop-shadow-3xl p-6 lg:p-7 bg-[#FBFBFB] rounded border-4 border-[#FBFBFB] hover:border-primaryYellow transition-all duration-300 delay-75 ease-in-out">
       <div>
         <StyledText>{testimonial}</StyledText>
 

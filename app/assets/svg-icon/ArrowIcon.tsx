@@ -1,19 +1,25 @@
-import * as React from "react";
 import { SVGProps } from "react";
 
 const ArrowIcon = ({
   stroke = "#021753",
+  className,
+  style = {},
   ...props
-}: SVGProps<SVGSVGElement>) => (
+}: SVGProps<SVGSVGElement> & {
+  className?: string;
+  style?: React.CSSProperties;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={16}
     height={16}
     fill="none"
+    className={className}
+    style={{ stroke, ...style }}
     {...props}
   >
     <path
-      stroke={stroke}
+      // stroke={stroke}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit={10}
