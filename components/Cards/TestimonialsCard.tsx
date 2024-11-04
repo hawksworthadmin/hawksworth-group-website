@@ -2,15 +2,25 @@ import React from "react";
 import StyledText from "../common/StyledText";
 import Image from "next/image";
 
-const TestimonialsCard = ({ text }: { text: string }) => {
+const TestimonialsCard = ({
+  name,
+  testimonial,
+  position,
+  image,
+}: {
+  name: string;
+  position: string;
+  image: string;
+  testimonial: string;
+}) => {
   return (
     <div className="drop-shadow-3xl p-6 lg:p-7 bg-[#FBFBFB] rounded">
       <div>
-        <StyledText>{text}</StyledText>
+        <StyledText>{testimonial}</StyledText>
 
         <div className="mt-8 flex space-x-4 items-center">
           <Image
-            src="/images/dummy/testimonial.webp"
+            src={image}
             width={52}
             height={52}
             alt="Picture of the author"
@@ -19,11 +29,11 @@ const TestimonialsCard = ({ text }: { text: string }) => {
 
           <div className="">
             <StyledText textClassname="font-semibold lg:text-xl text-base text-customBlack">
-              Oladimeji A. Edu
+              {name}
             </StyledText>
 
             <StyledText textClassname="mt-[2px] text-sm lg:text-base">
-              Strategy Consultant
+              {position}
             </StyledText>
           </div>
         </div>

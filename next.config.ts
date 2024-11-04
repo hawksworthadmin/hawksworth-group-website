@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       "@/common": path.resolve(__dirname, "common"),
       "@/utils": path.resolve(__dirname, "utils"),
       "@/hooks": path.resolve(__dirname, "hooks"),
+      "@/data": path.resolve(__dirname, "data"),
     };
     return config;
   },
