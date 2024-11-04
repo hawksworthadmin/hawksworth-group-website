@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import HeroSection from "../Components/common/HeroSection";
-import StyledSection from "../Components/common/StyledSection";
-import StyledText from "../Components/common/StyledText";
-import StyledHeaderText from "../Components/common/StyledText/StyledHeaderText";
-import VisionSection from "../Components/VisionSection";
-import LeadershipProfiles from "../Components/LeadershipProfiles";
+import HeroSection from "@/components/common/HeroSection";
+import StyledSection from "@/components/common/StyledSection";
+import StyledText from "@/components/common/StyledText";
+import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
+import VisionSection from "@/components/VisionSection";
+import LeadershipProfiles from "@/components/LeadershipProfiles";
 
 export default function Home() {
   return (
@@ -21,10 +21,10 @@ export default function Home() {
         >
           <StyledHeaderText
             text="Our Vision & Mission"
+            containerClassname="w-full flex flex-col items-center py-28"
             textClassname="font-tiempos font-bold text-black pb-6"
             subText="Hawksworth Advisors empowers businesses with tailored strategies, secure funding, and optimized operations for sustainable growth."
             subTextClassname="font-normal text-lg w-[55%] text-center"
-            className="py-28"
           />
         </div>
         <VisionSection />
@@ -68,7 +68,7 @@ export default function Home() {
           textClassname="font-tiempos font-bold text-black pb-6"
           subText="Our leadership team comprises industry experts, strategists, and entrepreneurs with decades of experience. We are united by our commitment to delivering results and building long-term relationships with our clients and partners."
           subTextClassname="font-normal text-lg w-[63%] text-center"
-          className="pb-12"
+          containerClassname="pb-12 w-full flex flex-col items-center"
         />
         <LeadershipProfiles />
       </StyledSection>

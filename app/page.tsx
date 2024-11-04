@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import Button from "./Components/common/Button";
-import HeroSection from "./Components/common/HeroSection";
-import StyledSection from "./Components/common/StyledSection";
-import StyledText from "./Components/common/StyledText";
-import StyledHeaderText from "./Components/common/StyledText/StyledHeaderText";
-import KeyNumbersSection from "./Components/KeyNumberSection";
-import OverviewSlider from "./Components/OverviewSlider";
-import GlassMorphismCard from "./Components/Cards/GlassMorphismCard";
-import { ViewSubsidiariesData } from "./hooks/ViewSubsidiareisData";
+import Button from "@/components/common/Button";
+import HeroSection from "@/components/common/HeroSection";
+import StyledSection from "@/components/common/StyledSection";
+import StyledText from "@/components/common/StyledText";
+import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
+import KeyNumbersSection from "@/components/KeyNumberSection";
+import OverviewSlider from "@/components/OverviewSlider";
+import GlassMorphismCard from "@/components/Cards/GlassMorphismCard";
+import { ViewSubsidiariesData } from "@/data/ViewSubsidiareisData";
 
 export default function Home() {
   return (
@@ -18,13 +18,15 @@ export default function Home() {
         header="Empowering Businesses with Innovative Solutions Across "
         subheader="Finance, Insights, Capital, and Ventures."
         description="Hawksworth Group is a global leader in business advisory, investment, and innovation, serving industries with forward-thinking strategies and comprehensive services."
-        button=<Button
-          label="Explore our subsidiaries"
-          onClick={() => console.log("hello")}
-          variant="primary"
-          className="hover:bg-gradient-to-r from-white via-yellow-75 to-yellow-200 hover:text-white"
-          borderStyleClassName="bg-white hover:bg-black"
-        />
+        button={
+          <Button
+            label="Explore our subsidiaries"
+            onClick={() => console.log("Explore")}
+            variant="primary"
+            className="hover:bg-gradient-to-r from-white via-yellow-75 to-yellow-200 hover:text-white"
+            borderStyleClassName="bg-white hover:bg-black"
+          />
+        }
       />
       <article className="w-full h-[4rem] bg-[#0A0A0A] flex space-between items-center px-10">
         <StyledText variant="secondary" textClassname="text-lg text-white">
@@ -67,6 +69,7 @@ export default function Home() {
       </StyledSection>
       <StyledSection containerClassname="pt-16" noPadding={true}>
         <StyledHeaderText
+          containerClassname="w-full flex flex-col items-center"
           text="Key numbers"
           textClassname="font-tiempos font-bold"
         />
@@ -77,7 +80,7 @@ export default function Home() {
           text="Testimonials and Partners"
           textClassname="font-tiempos font-bold text-white pb-6"
         />
-        <div className="bg-[#021859]  h-[40.75rem] flex items-center justify-end px-10">
+        <div className="bg-white/5  h-[40.75rem] flex items-center justify-end px-10">
           <div className="w-[40%] h-[31.125rem] absolute left-16">
             <Image
               src="/assets/svg/OverviewImage.svg"
@@ -114,6 +117,7 @@ export default function Home() {
       </section>
       <StyledSection containerClassname="lg:px-[4rem] py-20">
         <StyledHeaderText
+          containerClassname="w-full flex flex-col items-center"
           text="Our Subsidiaries"
           textClassname="font-tiempos font-bold pb-12"
         />
