@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "@/app/utils/styleUtilities";
+import { cn } from "@/utils/styleUtilities";
 
 type IconProps = {
   className?: Array<string> | string;

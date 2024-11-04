@@ -2,7 +2,7 @@ import WalletIcon from "../assets/svg-icon/WalletIcon";
 import UsersIcon from "../assets/svg-icon/UsersIcon";
 import EngagementsIcon from "../assets/svg-icon/EngagementsIcon";
 import StrategyIcon from "../assets/svg-icon/StrategyIcon";
-import { KeyNumbersProp } from "../Components/Cards/KeyNumbersCard";
+import { KeyNumbersProp } from "../../components/Cards/KeyNumbersCard";
 
 // Define the KeyNumbersData array
 const KeyNumbersData: KeyNumbersProp[] = [

@@ -4,7 +4,7 @@ import FundingIcon from "../assets/svg-icon/FundingIcon";
 import GoToMarketIcon from "../assets/svg-icon/GoToMarketIcon";
 import MultipleUserIcon from "../assets/svg-icon/MultipleUsersIcon";
 import StrategyIcon from "../assets/svg-icon/StrategyIcon";
-import { VisionProps } from "../Components/VisionSection";
+import { VisionProps } from "../../components/VisionSection";
 
 // Define the KeyNumbersData array
 const VisionData: VisionProps[] = [

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { LeadershipData } from "../hooks/LeadershipData";
+import { LeadershipData } from "../app/hooks/LeadershipData";
 
 const LeadershipProfiles = () => {
   return (

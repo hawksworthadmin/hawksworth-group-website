@@ -1,5 +1,4 @@
 import React from "react";
-import StyledText from ".";
 import classNames from "classnames";
 
 export type StyledHeaderTextProps = {
@@ -7,6 +6,7 @@ export type StyledHeaderTextProps = {
   subText?: string;
   textClassname?: string;
   subTextClassname?: string;
+  containerClassname?: string;
 };
 
 const StyledHeaderText = ({
@@ -14,19 +14,22 @@ const StyledHeaderText = ({
   subText,
   textClassname,
   subTextClassname,
+  containerClassname,
 }: StyledHeaderTextProps) => {
   return (
-    <div>
-      <StyledText
-        fontType="secondary"
-        textClassname={classNames("lg:text-4xl text-[22px]", textClassname)}
+    <div className={classNames(containerClassname)}>
+      <p
+        className={classNames(
+          "lg:text-4xl text-[22px] font-tiempos font-bold leading-snug lg:leading-normal",
+          textClassname
+        )}
       >
         {text}
-      </StyledText>
+      </p>
 
-      <StyledText textClassname={classNames("mt-2", subTextClassname)}>
+      <p className={classNames("mt-2 lg:text-lg text-sm", subTextClassname)}>
         {subText}
-      </StyledText>
+      </p>
     </div>
   );
 };

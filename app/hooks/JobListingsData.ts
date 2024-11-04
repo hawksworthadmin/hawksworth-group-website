@@ -1,4 +1,4 @@
-import { JobListingsProp } from "../Components/Cards/JobListingsCard";
+import { JobListingsProp } from "../../components/Cards/JobListingsCard";
 
 export const JobListingsData: JobListingsProp[] = [
   {

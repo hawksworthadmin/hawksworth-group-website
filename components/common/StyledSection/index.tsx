@@ -11,17 +11,17 @@ const StyledSection = ({
   containerClassname?: string;
 }) => {
   return (
-    <section
+    <div
       className={classNames(
-        "px-6 lg:px-[120px]",
+        "px-6 py-20 lg:p-[120px]",
         {
           "p-0": noPadding,
         },
-        containerClassname,
+        containerClassname
       )}
     >
       {children}
-    </section>
+    </div>
   );
 };
 

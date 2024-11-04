@@ -1,5 +1,5 @@
 import React from "react";
-import VisionDataComponent from "../hooks/VisionData";
+import VisionDataComponent from "../app/hooks/VisionData";
 
 export interface VisionProps {
   bgColor: string;

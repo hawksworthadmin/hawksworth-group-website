@@ -21,11 +21,13 @@ const DisplayPage = () => {
           header="Empowering Businesses with Innovative Solutions Across "
           subheader="Finance, Insights, Capital, and Ventures."
           description="Hawksworth Group is a global leader in business advisory, investment, and innovation, serving industries with forward-thinking strategies and comprehensive services."
-          button=<Button
-            label="Explore our subsidiaries"
-            onClick={() => console.log("hello")}
-            variant="primary"
-          />
+          button={
+            <Button
+              label="Explore our subsidiaries"
+              onClick={() => console.log("hello")}
+              variant="primary"
+            />
+          }
         />
         <StyledSection>
           {/* StyledText for default font */}
@@ -58,7 +60,7 @@ const DisplayPage = () => {
           <BlogPostCard />
 
           {/* Subsidiaries Card --- This will be styled to accept children in the future */}
-          <GlassMorphismCard />
+          {/* <GlassMorphismCard /> */}
         </StyledSection>
       </section>
     </>

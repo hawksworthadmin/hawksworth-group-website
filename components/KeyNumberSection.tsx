@@ -1,6 +1,6 @@
 "use client";
 import KeyNumbersCard from "./Cards/KeyNumbersCard";
-import KeyNumbersComponent from "../hooks/KeyNumbersData";
+import KeyNumbersComponent from "../app/hooks/KeyNumbersData";
 
 export default function Home() {
   const KeyNumbersData = KeyNumbersComponent();

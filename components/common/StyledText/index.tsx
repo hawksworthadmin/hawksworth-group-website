@@ -29,33 +29,32 @@ const StyledText = ({
   return (
     <>
       {isLink ? (
-        <Link href={href} className="cursor-pointer font-inter">
-          <div
+        <Link
+          href={href}
+          className={classNames(
+            "cursor-pointer font-inter flex gap-1 items-center",
+            linkContainerClassname
+          )}
+        >
+          <p
             className={classNames(
-              "flex gap-1 items-center",
-              linkContainerClassname,
+              "text-primaryBlue lg:text-lg text-sm font-bold",
+              textClassname
             )}
           >
-            <p
-              className={classNames(
-                "text-primaryBlue lg:text-lg text-sm font-bold",
-                textClassname,
-              )}
-            >
-              {linkText}
-            </p>
-            <ArrowIcon stroke={stroke} />
-          </div>
+            {linkText}
+          </p>
+          <ArrowIcon stroke={stroke} />
         </Link>
       ) : (
         <p
           className={classNames(
-            "lg:text-lg text-sm font-inter",
+            "lg:text-lg text-sm font-inter leading-snug",
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
             },
-            textClassname,
+            textClassname
           )}
         >
           {children}

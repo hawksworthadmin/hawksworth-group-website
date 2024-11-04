@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import StyledText from "../StyledText";
 
@@ -29,9 +30,7 @@ const HeroSection = ({
           {header}
           <span className="text-primaryYellow">{subheader}</span>
         </h1>
-        <StyledText textClassname="font-normal lg:text-lg text-sm pb-6">
-          {description}
-        </StyledText>
+        <StyledText textClassname="pb-6">{description}</StyledText>
         {button}
       </div>
     </section>

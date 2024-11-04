@@ -1,6 +1,6 @@
 import React from "react";
 import JobListingsCard from "./Cards/JobListingsCard";
-import { JobListingsData } from "../hooks/JobListingsData";
+import { JobListingsData } from "../app/hooks/JobListingsData";
 
 const CareerListingsSection = () => {
   return (

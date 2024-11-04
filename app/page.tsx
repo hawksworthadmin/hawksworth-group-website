@@ -1,5 +1,4 @@
-"use client";
-import DisplayPage from "./Components/DisplayPage";
+import DisplayPage from "@/components/DisplayPage";
 
 export default function Home() {
   return <DisplayPage />;
