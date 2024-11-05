@@ -53,7 +53,7 @@ const StyledText = ({
       ) : (
         <p
           className={classNames(
-            "lg:text-lg text-sm font-inter leading-snug",
+            "lg:text-lg text-sm font-averta leading-snug",
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",

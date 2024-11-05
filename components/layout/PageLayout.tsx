@@ -1,15 +1,17 @@
 import React from "react";
 import FooterLayout from "./FooterLayout";
+import Navbar from "./Navigation/Navbar";
 
 const PageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex justify-center">
-      <div className="text-darkGrey max-w-[94.5rem]">
+
+    <div className="text-darkGrey">
+      <Navbar/>
         {children}
 
         <FooterLayout />
       </div>
-    </div>
+
   );
 };
 

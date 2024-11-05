@@ -15,7 +15,7 @@ const JobListingsCard = ({ image, Header, Subtext, Link }: JobListingsProp) => {
       <div className="w-full lg:h-[13.938rem] h-[10.313rem] rounded-sm relative overflow-hidden">
         <Image
           src={image}
-          alt="logo"
+          alt="Job Listings Image"
           layout="fill"
           objectFit="cover"
           className="rounded-sm object-cover w-full h-full"

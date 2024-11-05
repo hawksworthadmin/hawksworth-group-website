@@ -75,13 +75,13 @@ export default function Home() {
         />
         <KeyNumbersSection />
       </StyledSection>
-      <section className="bg-primaryBlue py-16 px-44 flex flex-col items-center justify-center relative">
+      <section className="bg-primaryBlue py-20 lg:px-48 flex flex-col items-center justify-center relative">
         <StyledHeaderText
           text="Testimonials and Partners"
           textClassname="font-tiempos font-bold text-white pb-6"
         />
         <div className="bg-white/5  h-[40.75rem] flex items-center justify-end px-10">
-          <div className="w-[40%] h-[31.125rem] absolute left-16">
+          <div className="w-[40%] h-[31.125rem] absolute left-20">
             <Image
               src="/assets/svg/OverviewImage.svg"
               alt="Slide 1"
@@ -90,7 +90,8 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-1/2 ">
+          ;
+          <div className="w-1/2">
             <p className="font-tiempos font-bold text-4xl text-white">“</p>
             <StyledText textClassname="text-white font-normal text-base py-6">
               Hawksworth Group&apos;s advisory services were instrumental in our
@@ -110,12 +111,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           {/* Navigation Arrows */}
           <div className="flex justify-start gap-6 mt-8"></div>
         </div>
       </section>
-      <StyledSection containerClassname="lg:px-[4rem] py-20">
+      <StyledSection containerClassname="lg:px-[6.5rem] py-20">
         <StyledHeaderText
           containerClassname="w-full flex flex-col items-center"
           text="Our Subsidiaries"
@@ -130,9 +130,9 @@ export default function Home() {
               linkText="Learn More"
               link={items.link}
               imageUrl={items.imageUrl}
-              outerContainerClassname="w-[626px] lg:h-[525px]"
+              outerContainerClassname="w-[600px] lg:h-[525px]"
               containerClassname="lg:px-5"
-              glassCardClassName="lg:px-[20px] lg:py-5"
+              glassCardClassName="lg:px-[15px] lg:py-5"
               styleHeaderClassName="items-start"
               textClassname="text-white font-tiempos font-bold lg:text-[22px]"
               subTextClassname="text-base font-normal"

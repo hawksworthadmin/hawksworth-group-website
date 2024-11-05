@@ -4,9 +4,23 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import PageLayout from "@/components/layout/PageLayout";
 
+// const averta = localFont({
+//   src: "./fonts/Averta/AvertaCY.otf",
+//   weight: "100 900",
+//   variable: "--font-averta",
+// });
+
 const averta = localFont({
-  src: "./fonts/Averta/AvertaCY.otf",
-  weight: "100 900",
+  src: [
+    {
+      path: "./fonts/Averta/AvertaDemoPE-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "./fonts/Averta/AvertaDemoPE-ExtraboldItalic.otf",
+      weight: "900",
+    },
+  ],
   variable: "--font-averta",
 });
 

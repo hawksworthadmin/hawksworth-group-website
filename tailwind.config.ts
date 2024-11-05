@@ -35,6 +35,9 @@ const config: Config = {
         "yellow-white-gradient":
           "linear-gradient(90deg, #C49700 0%, #FFFFFF 100%)",
       },
+      backdropBlur: {
+        "200": "200px",
+      },
     },
   },
   plugins: [],

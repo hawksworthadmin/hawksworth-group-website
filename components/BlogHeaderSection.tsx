@@ -19,7 +19,7 @@ const BlogHeaderSection = () => {
 
   return (
     <div>
-      <StyledSection containerClassname="lg:p-[120px] py-[60px]">
+      <StyledSection containerClassname="lg:px-[120px] lg:py-[170px] py-[120px] pt-[150px]">
         <div className="lg:w-2/5 text-center mx-auto flex flex-col items-center">
           <StyledHeaderText
             text={"Articles & Thought Leadership"}

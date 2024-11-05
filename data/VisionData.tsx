@@ -55,7 +55,7 @@ const VisionData: VisionProps[] = [
         className={"md:w-[3.25rem] md:[h-3.25rem] w-[2.25rem] h-[2.25rem]"}
       />
     ),
-    bgColor: "lg:bg-white bg-inherit",
+    bgColor: " bg-inherit lg:bg-white",
     text: "Develop workforce programmes and management teams",
     subText: "to ensuring long term sustainability.",
   },
