@@ -60,7 +60,6 @@ export const subServices = [
   },
 ];
 
-
 export interface NavServicesCard {
   header: string;
   content: string[];
@@ -92,10 +91,7 @@ export const NavServicesList: NavServicesCard[] = [
   },
   {
     header: "Hawksworth Ventures",
-    content: [
-      "Incubation Programs",
-      "Acceleration Programs",
-    ],
+    content: ["Incubation Programs", "Acceleration Programs"],
     href: " ",
   },
 ];

@@ -18,8 +18,6 @@ const subsidiaries = [
   { name: "Hawksworth capital", href: "" },
   { name: "Hawksworth Venture", href: "" },
 ];
-  
-
 
 export default function Home() {
   return (
@@ -42,14 +40,14 @@ export default function Home() {
       <article
         className="w-full h-[4rem] bg-[#0A0A0A] flex justify-between items-center lg:px-10 px-4 transition-colors duration-1000"
         // style={{
-        //   animation: "bgColorChange 2s ease-in-out forwards 6s", 
+        //   animation: "bgColorChange 2s ease-in-out forwards 6s",
         // }}
       >
         <StyledText
           variant="secondary"
           textClassname="text-lg text-white transition-all duration-1000"
           // style={{
-          //   animation: "fadeOut 1s forwards 4s", 
+          //   animation: "fadeOut 1s forwards 4s",
           // }}
         >
           Our Subsidiaries

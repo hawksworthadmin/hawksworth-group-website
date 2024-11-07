@@ -30,7 +30,7 @@ const StyledText = ({
   stroke,
   children,
   hasArrowIcon = true,
-  style
+  style,
 }: StyledTextProps) => {
   return (
     <>
@@ -54,16 +54,15 @@ const StyledText = ({
         </Link>
       ) : (
         <p
-            className={classNames(
+          className={classNames(
             textClassname,
             "lg:text-lg text-sm  leading-snug",
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
             },
-            
-            )}
-            style={style}
+          )}
+          style={style}
         >
           {children}
         </p>

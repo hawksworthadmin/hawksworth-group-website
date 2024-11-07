@@ -29,17 +29,23 @@ body {
 .vision-white {
   @apply lg:bg-white bg-inherit;
 }
-.key-numbers-order{
-  @apply order-3 md:order-4
+.key-numbers-order {
+  @apply order-3 md:order-4;
 }
-.key-numbers-order2{
-  @apply order-4 md:order-3
+.key-numbers-order2 {
+  @apply order-4 md:order-3;
 }
 
 @keyframes scrollX {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .animate-scrollX {
@@ -47,11 +53,19 @@ body {
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes bgColorChange {
-  0% { background-color: #0A0A0A; }
-  100% { background-color: red; }
+  0% {
+    background-color: #0a0a0a;
+  }
+  100% {
+    background-color: red;
+  }
 }

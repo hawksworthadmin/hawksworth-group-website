@@ -1,4 +1,3 @@
-
 import { SVGProps } from "react";
 
 const MenuIcon = ({
@@ -12,12 +11,7 @@ const MenuIcon = ({
     fill="none"
     {...props}
   >
-    <path
-      d="M3 7H21"
-      stroke={stroke}
-      strokeWidth="1.5"
-      strokeLinecap="round"
-    />
+    <path d="M3 7H21" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
     <path
       d="M3 12H21"
       stroke={stroke}

@@ -64,7 +64,6 @@ const KeyNumbersData: KeyNumbersProp[] = [
   },
 ];
 
-
 const KeyNumbersComponent = () => {
   return KeyNumbersData;
 };

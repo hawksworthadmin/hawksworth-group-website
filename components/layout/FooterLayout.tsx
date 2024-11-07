@@ -1,7 +1,11 @@
 import React from "react";
 import StyledSection from "../common/StyledSection";
 import Image from "next/image";
-import { footerCategories, FooterCategory, groupSocialMedia } from "@/data/footerData";
+import {
+  footerCategories,
+  FooterCategory,
+  groupSocialMedia,
+} from "@/data/footerData";
 import Link from "next/link";
 
 const FooterLayout = () => {

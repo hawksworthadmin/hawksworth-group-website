@@ -38,7 +38,7 @@ const config: Config = {
       },
       backdropBlur: {
         "200": "200px",
-        "80":"80px"
+        "80": "80px",
       },
     },
   },

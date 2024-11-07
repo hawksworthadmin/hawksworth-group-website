@@ -10,13 +10,20 @@ interface OverviewCardProps {
   haslink?: boolean;
   linkText?: string;
   containerClassname?: string;
-};
-const OverviewCard = ({ text, description, header,haslink=false,linkText,containerClassname }: OverviewCardProps) => {
+}
+const OverviewCard = ({
+  text,
+  description,
+  header,
+  haslink = false,
+  linkText,
+  containerClassname,
+}: OverviewCardProps) => {
   return (
     <StyledSection
       containerClassname={classNames(
         "lg:pb-20 pt-10 pb-[60px] text-center lg:text-left",
-        containerClassname
+        containerClassname,
       )}
       noPadding={true}
     >
@@ -47,5 +54,3 @@ const OverviewCard = ({ text, description, header,haslink=false,linkText,contain
   );
 };
 export default OverviewCard;
-
-

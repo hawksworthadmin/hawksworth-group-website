@@ -20,7 +20,7 @@ const StyledSection = ({
           "px-0": noPadding,
           "px-6 lg:px-[120px]": !noPadding,
         },
-        containerClassname
+        containerClassname,
       )}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >

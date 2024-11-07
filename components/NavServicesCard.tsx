@@ -1,7 +1,7 @@
-import React from 'react'
-import StyledSection from './common/StyledSection'
-import StyledText from './common/StyledText';
-import { NavServicesList } from '@/data/servicesData';
+import React from "react";
+import StyledSection from "./common/StyledSection";
+import StyledText from "./common/StyledText";
+import { NavServicesList } from "@/data/servicesData";
 
 const NavServicesCard = () => {
   return (
@@ -40,6 +40,6 @@ const NavServicesCard = () => {
       </div>
     </StyledSection>
   );
-}
+};
 
-export default NavServicesCard
+export default NavServicesCard;

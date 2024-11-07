@@ -18,7 +18,7 @@ const VisionItem: React.FC<VisionProps> = ({
   <div
     className={cn(
       `border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-[18.75rem] w-full md:w-[30.1rem]`,
-      bgColor
+      bgColor,
     )}
   >
     <div className="pb-10 lg:pb-0">{icon}</div>

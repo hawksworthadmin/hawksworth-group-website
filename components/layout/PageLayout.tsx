@@ -4,14 +4,12 @@ import Navbar from "./Navigation/Navbar";
 
 const PageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-
     <div className="text-darkGrey">
-      <Navbar/>
-        {children}
+      <Navbar />
+      {children}
 
-        <FooterLayout />
-      </div>
-
+      <FooterLayout />
+    </div>
   );
 };
 
