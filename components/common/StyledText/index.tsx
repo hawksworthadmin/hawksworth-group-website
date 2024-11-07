@@ -16,6 +16,7 @@ export type StyledTextProps = {
   stroke?: string;
   children?: React.ReactNode;
   hasArrowIcon?: boolean;
+  style?: React.CSSProperties;
 };
 
 const StyledText = ({
@@ -29,6 +30,7 @@ const StyledText = ({
   stroke,
   children,
   hasArrowIcon = true,
+  style
 }: StyledTextProps) => {
   return (
     <>
@@ -52,14 +54,16 @@ const StyledText = ({
         </Link>
       ) : (
         <p
-          className={classNames(
-            "lg:text-lg text-sm font-averta leading-snug",
+            className={classNames(
+            textClassname,
+            "lg:text-lg text-sm  leading-snug",
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
             },
-            textClassname,
-          )}
+            
+            )}
+            style={style}
         >
           {children}
         </p>

@@ -29,7 +29,7 @@ const KeyNumbersData: KeyNumbersProp[] = [
         className={"w-[3.75rem] h-[3.75rem] lg:w-[7.5rem] lg:h-[7.5rem]"}
       />
     ),
-    bgColor: "bg-white order-2",
+    bgColor: "bg-white",
     titleColor: "text-black",
     subtitleColor: "text-darkGrey",
     id: 2,
@@ -43,7 +43,7 @@ const KeyNumbersData: KeyNumbersProp[] = [
         className={"w-[3.75rem] h-[3.75rem] lg:w-[7.5rem] lg:h-[7.5rem]"}
       />
     ),
-    bgColor: "bg-white order-4 lg:order-3",
+    bgColor: "bg-white key-numbers-order2",
     titleColor: "text-darkGrey",
     subtitleColor: "text-darkGrey",
     id: 3,
@@ -57,12 +57,13 @@ const KeyNumbersData: KeyNumbersProp[] = [
         className={"w-[3.75rem] h-[3.75rem] lg:w-[7.5rem] lg:h-[7.5rem]"}
       />
     ),
-    bgColor: "bg-opacYellow order-3 lg:order-4",
+    bgColor: "bg-opacYellow key-numbers-order",
     titleColor: "text-primaryYellow",
     subtitleColor: "text-darkGrey",
     id: 4,
   },
 ];
+
 
 const KeyNumbersComponent = () => {
   return KeyNumbersData;

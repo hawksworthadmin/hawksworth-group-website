@@ -1,5 +1,6 @@
 import React from "react";
 import VisionDataComponent from "../data/VisionData";
+import { cn } from "@/utils/styleUtilities";
 
 export interface VisionProps {
   bgColor: string;
@@ -15,7 +16,10 @@ const VisionItem: React.FC<VisionProps> = ({
   icon,
 }) => (
   <div
-    className={`${bgColor} border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-48 w-full md:w-[30.1rem]`}
+    className={cn(
+      `border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-[18.75rem] w-full md:w-[30.1rem]`,
+      bgColor
+    )}
   >
     <div className="pb-10 lg:pb-0">{icon}</div>
     <p className="font-semibold text-[1.375] text-darkGrey">

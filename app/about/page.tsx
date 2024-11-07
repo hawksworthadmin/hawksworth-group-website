@@ -2,10 +2,10 @@
 import Image from "next/image";
 import HeroSection from "@/components/common/HeroSection";
 import StyledSection from "@/components/common/StyledSection";
-import StyledText from "@/components/common/StyledText";
 import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import VisionSection from "@/components/VisionSection";
 import LeadershipProfiles from "@/components/LeadershipProfiles";
+import OverviewCard from "@/components/common/OverviewCard";
 
 export default function Home() {
   return (
@@ -24,35 +24,23 @@ export default function Home() {
             containerClassname="w-full flex flex-col items-center py-28"
             textClassname="font-tiempos font-bold text-black pb-6"
             subText="Hawksworth Advisors empowers businesses with tailored strategies, secure funding, and optimized operations for sustainable growth."
-            subTextClassname="font-normal text-lg w-[55%] text-center"
+            subTextClassname="font-normal text-lg lg:w-[55%] w-[90%] text-center "
           />
         </div>
         <VisionSection />
       </StyledSection>
       <StyledSection noPadding={true}>
-        <div className="px-[120px] py-24">
-          <StyledText textClassname="font-bold text-lg text-[#9E9E9E] capitalize">
-            Company History
-          </StyledText>
-          <div className="flex justify-between pt-6 w-full capitalize">
-            <StyledText textClassname="text-left text-3xl text-black w-[33%] font-tiempos font-bold">
-              Founded with the mission to bridge the gap between innovative
+        <OverviewCard
+          header="COMPANY HISTORY"
+          text="Founded with the mission to bridge the gap between innovative
               ideas and successful execution, Hawksworth Group has evolved into
-              a global leader in advisory, investment, and research services.
-            </StyledText>
-            <div className=" w-[40%]">
-              <StyledText
-                textClassname="text-left font-normal text-lg text-darkGrey"
-                variant="default"
-              >
-                With a diverse portfolio and a team of forward-thinking
+              a global leader in advisory, investment, and research services."
+          description="With a diverse portfolio and a team of forward-thinking
                 professionals, we have expanded our reach to multiple industries
-                and regions worldwide.
-              </StyledText>
-            </div>
-          </div>
-        </div>
-        <div className="md:w-[90%] w-full h-[697px] overflow-hidden relative">
+                and regions worldwide."
+          containerClassname="lg:px-[120px] lg:py-24 px-0"
+        />
+        <div className="md:w-[90%] w-full lg:h-[697px] h-[425px] overflow-hidden relative">
           <Image
             src="/assets/svg/companyHistory.svg"
             alt="Company History image"
@@ -67,7 +55,7 @@ export default function Home() {
           text="Leadership profiles"
           textClassname="font-tiempos font-bold text-black pb-6"
           subText="Our leadership team comprises industry experts, strategists, and entrepreneurs with decades of experience. We are united by our commitment to delivering results and building long-term relationships with our clients and partners."
-          subTextClassname="font-normal text-lg w-[63%] text-center"
+          subTextClassname="font-normal text-lg lg:w-[63%] w-w-[90%] text-center"
           containerClassname="pb-12 w-full flex flex-col items-center"
         />
         <LeadershipProfiles />

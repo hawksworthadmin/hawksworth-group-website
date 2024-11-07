@@ -1,7 +1,7 @@
 import React from "react";
 import StyledSection from "../common/StyledSection";
 import Image from "next/image";
-import { footerCategories, FooterCategory } from "@/data/footerData";
+import { footerCategories, FooterCategory, groupSocialMedia } from "@/data/footerData";
 import Link from "next/link";
 
 const FooterLayout = () => {
@@ -24,7 +24,27 @@ const FooterLayout = () => {
             </p>
           </div>
 
-          <div className="lg:mt-12 mt-6">Icons</div>
+          <div className="lg:mt-12 mt-6 flex gap-4">
+            {groupSocialMedia.map((item, index) => (
+              <Link
+                href={item.link}
+                key={index}
+                aria-label={`Follow us on ${item.name}`}
+              >
+                <div className="bg-primaryBlue rounded-full flex items-center justify-center box-border h-[28px] lg:w-[32px] lg:h-[32px] w-[28px]">
+                  <div className="flex items-center justify-center">
+                    <Image
+                      src={item.icon}
+                      alt={`${item.name} Icon`}
+                      width={14}
+                      height={14}
+                      className="object-cover w-[14px] h-[14px] lg:h-[18px] lg:w-[18px] "
+                    />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 text-left">

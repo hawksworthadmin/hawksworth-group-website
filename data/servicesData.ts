@@ -59,3 +59,43 @@ export const subServices = [
       "We specialize in nurturing startups and fostering entrepreneurial success through our comprehensive incubation and investment programs. Join our incubation programs, secure funding, and gain mentorship to turn your innovative ideas into successful ventures.",
   },
 ];
+
+
+export interface NavServicesCard {
+  header: string;
+  content: string[];
+  href: string;
+}
+export const NavServicesList: NavServicesCard[] = [
+  {
+    header: "Hawksworth Advisors",
+    content: [
+      "Business Strategy Consulting",
+      "Financial Management Advisory",
+      "Operational Excellence",
+    ],
+    href: " ",
+  },
+  {
+    header: "Hawksworth Insights",
+    content: ["Industry Reports", "Market Analysis", "Economic Forecasts"],
+    href: " ",
+  },
+  {
+    header: "Hawksworth Capitals",
+    content: [
+      "Mergers & Acquisitions",
+      "Capital Raising",
+      "Strategic Advisory",
+    ],
+    href: " ",
+  },
+  {
+    header: "Hawksworth Ventures",
+    content: [
+      "Incubation Programs",
+      "Acceleration Programs",
+    ],
+    href: " ",
+  },
+];

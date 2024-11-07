@@ -25,6 +25,7 @@ const Blog = () => {
           ))}
         </div>
       </StyledSection>
+
       <div className="bg-[url('/assets/images/dummy/image-23.png')] lg:p-20 py-6 px-5 bg-cover bg-center">
         <GlassMorphismCard
           imageUrl="/assets/images/feature-img.webp"
@@ -38,7 +39,16 @@ const Blog = () => {
           }
         />
       </div>
-
+      <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap">
+        {["Latest", ...categories].map((category, index) => (
+          <StyledText
+            key={index}
+            textClassname="font-400 text-base flex items-center h-full text-[#747474] hover:text-textBlue border-b-2 border-transparent hover:border-primaryYellow cursor-pointer"
+          >
+            {category}
+          </StyledText>
+        ))}
+      </div>
       <div className="flex justify-center items-center">
         <BlogPostsSection />
       </div>

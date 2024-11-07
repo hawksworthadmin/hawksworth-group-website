@@ -9,6 +9,17 @@ import KeyNumbersSection from "@/components/KeyNumberSection";
 import OverviewSlider from "@/components/OverviewSlider";
 import GlassMorphismCard from "@/components/Cards/GlassMorphismCard";
 import { ViewSubsidiariesData } from "@/data/ViewSubsidiareisData";
+import OverviewCard from "@/components/common/OverviewCard";
+import Link from "next/link";
+
+const subsidiaries = [
+  { name: "Hawksworth Advisors", href: "" },
+  { name: "Hawksworth Insights", href: "" },
+  { name: "Hawksworth capital", href: "" },
+  { name: "Hawksworth Venture", href: "" },
+];
+  
+
 
 export default function Home() {
   return (
@@ -28,43 +39,57 @@ export default function Home() {
           />
         }
       />
-      <article className="w-full h-[4rem] bg-[#0A0A0A] flex space-between items-center px-10">
-        <StyledText variant="secondary" textClassname="text-lg text-white">
+      <article
+        className="w-full h-[4rem] bg-[#0A0A0A] flex justify-between items-center lg:px-10 px-4 transition-colors duration-1000"
+        // style={{
+        //   animation: "bgColorChange 2s ease-in-out forwards 6s", 
+        // }}
+      >
+        <StyledText
+          variant="secondary"
+          textClassname="text-lg text-white transition-all duration-1000"
+          // style={{
+          //   animation: "fadeOut 1s forwards 4s", 
+          // }}
+        >
           Our Subsidiaries
         </StyledText>
-      </article>
-      <StyledSection
-        containerClassname="py-16"
-        imageUrl="/assets/images/dummy/image-23.png"
-      >
-        <div className="mb-10">
-          <StyledText textClassname="font-bold text-lg text-[#9E9E9E]">
-            OVERVIEW
-          </StyledText>
-          <div className="flex justify-between pt-6 w-full">
-            <StyledText textClassname="text-left text-3xl text-black w-[33%] font-tiempos font-bold">
-              Hawksworth Group is a diversified company with a strong focus on
-              providing advisory, investment, and research services across
-              various industries.
-            </StyledText>
-            <div className=" w-[40%]">
-              <StyledText
-                textClassname="text-left font-normal text-lg text-darkGrey"
-                variant="default"
-              >
-                Our group is dedicated to helping businesses and organizations
-                achieve sustainable growth, identify opportunities, and execute
-                strategies that drive success.
-              </StyledText>
-              <StyledText
-                linkText="Learn more"
-                isLink
-                stroke="#021753"
-                textClassname="text-left font-bold text-lg text-primaryBlue"
-              />
-            </div>
-          </div>
+        <div
+          className="h-full flex gap-4 transition-transform duration-1000"
+          // style={{
+          //   animation:
+          //     "scrollX 3s ease-in-out 2, fadeOut 1s ease-in forwards 4s",
+          // }}
+        >
+          {subsidiaries.map((subsidiary, index) => (
+            <Link
+              className="h-full hover:bg-primaryYellow inline-flex items-center text-sm font-400 text-[#E8E8E8] px-6"
+              href={subsidiary.href}
+              key={index}
+            >
+              {subsidiary.name}
+            </Link>
+          ))}
         </div>
+      </article>
+
+      <StyledSection
+        containerClassname="py-16 px-0 lg:px-[120px]"
+        imageUrl="/assets/images/dummy/image-23.png"
+        noPadding={true}
+      >
+        <OverviewCard
+          header="OVERVIEW"
+          text="  Hawksworth Group is a diversified company with a strong focus on
+              providing advisory, investment, and research services across
+              various industries."
+          description=" Our group is dedicated to helping businesses and organizations
+                achieve sustainable growth, identify opportunities, and execute
+                strategies that drive success."
+          haslink={true}
+          linkText="Learn more"
+        />
+
         <OverviewSlider />
       </StyledSection>
       <StyledSection containerClassname="pt-16" noPadding={true}>
@@ -75,13 +100,13 @@ export default function Home() {
         />
         <KeyNumbersSection />
       </StyledSection>
-      <section className="bg-primaryBlue py-20 lg:px-48 flex flex-col items-center justify-center relative">
+      <section className="bg-primaryBlue py-20 lg:px-48 px-10 flex flex-col items-center justify-center relative">
         <StyledHeaderText
           text="Testimonials and Partners"
           textClassname="font-tiempos font-bold text-white pb-6"
         />
-        <div className="bg-white/5  h-[40.75rem] flex items-center justify-end px-10">
-          <div className="w-[40%] h-[31.125rem] absolute left-20">
+        <div className="bg-white/5  h-[40.75rem] flex flex-col lg-flex-row items-center lg:items-end lg:justify-center lg:px-10">
+          <div className="lg:w-[40%] w-full lg:h-[31.125rem] h-[13.375rem] relative overflow-hidden lg:absolute lg:left-20 left-0">
             <Image
               src="/assets/svg/OverviewImage.svg"
               alt="Slide 1"
@@ -91,9 +116,9 @@ export default function Home() {
             />
           </div>
           ;
-          <div className="w-1/2">
-            <p className="font-tiempos font-bold text-4xl text-white">“</p>
-            <StyledText textClassname="text-white font-normal text-base py-6">
+          <div className="lg:w-1/2 w-[90%] px-6 lg:px-0 pt-8 lg:pt-0">
+            <p className="font-tiempos font-bold text-4xl text-[#D1D1D1]">“</p>
+            <StyledText textClassname="text-white font-normal text-base lg:py-6 py-0 text-sm">
               Hawksworth Group&apos;s advisory services were instrumental in our
               company&apos;s expansion. Their team&apos;s expertise and
               strategic guidance enabled us to navigate complex financial
@@ -130,9 +155,9 @@ export default function Home() {
               linkText="Learn More"
               link={items.link}
               imageUrl={items.imageUrl}
-              outerContainerClassname="w-[600px] lg:h-[525px]"
+              outerContainerClassname="w-[600px] lg:h-[525px] w-full"
               containerClassname="lg:px-5"
-              glassCardClassName="lg:px-[15px] lg:py-5"
+              glassCardClassName="lg:px-7 lg:py-6"
               styleHeaderClassName="items-start"
               textClassname="text-white font-tiempos font-bold lg:text-[22px]"
               subTextClassname="text-base font-normal"

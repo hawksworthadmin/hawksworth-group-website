@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@/components/common/Button";
+import NavServicesCard from "@/components/NavServicesCard";
 import CloseIcon from "@/public/assets/svg-icon/CloseIcon";
 import MenuIcon from "@/public/assets/svg-icon/MenuIcon";
 import { cn } from "@/utils/styleUtilities";
@@ -25,15 +26,27 @@ const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const requiresUpdatedNav = pathname === "/blog" || pathname === "/careers";
+  const blogNavColor = pathname === "/careers";
   const [openNav, setOpenNav] = useState(false);
+  const [showNavServices, setShowNavServices] = useState(false);
 
   const toggleNav = () => {
-    setOpenNav((prev) => !prev); // Toggle navigation immediately
+    setOpenNav((prev) => !prev); 
   };
 
   return (
     <nav>
-      <aside className="w-full h-[72px] py-4 lg:px-20 px-6 bg-[#1819190D]/5 border border-[#F3F3F31A]/10 backdrop-blur-200 top-0 z-50 absolute flex items-center justify-between">
+      <aside
+        className={cn(
+          `w-full h-[72px] py-4 lg:px-20 px-6  border border-[#F3F3F31A]/10 top-0 z-50 absolute flex items-center justify-between ${
+            blogNavColor
+              ? "bg-white backdrop-blur-80 border-[#F3F3F3]"
+              : requiresUpdatedNav
+              ? "bg-[#FDFDFD] border-[#DEDEDE80]/50 backdrop-blur-80"
+              : "bg-[#1819190D]/5 backdrop-blur-200"
+          } `
+        )}
+      >
         <Image
           src={requiresUpdatedNav ? "/assets/logo.svg" : "/assets/navLogo.svg"}
           alt={"logo"}
@@ -49,7 +62,14 @@ const Navbar = () => {
         />
         <ul className="hidden md:flex justify-between items-center w-[40%]">
           {navLinks.map(({ label, href, className }) => (
-            <li key={href}>
+            <li
+              key={href}
+              className=""
+              onMouseEnter={() => {
+                label === "Services" && setShowNavServices(true);
+                label !== "Services" && setShowNavServices(false);
+              }}
+            >
               <Link
                 href={href}
                 className={cn(
@@ -68,7 +88,7 @@ const Navbar = () => {
             variant="primary"
             className={`${
               requiresUpdatedNav
-                ? "hover:bg-primaryBlue hover:text-white "
+                ? "hover:bg-black hover:text-white "
                 : "hover:bg-gradient-to-r from-white via-yellow-75 to-yellow-200 hover:text-white"
             }`}
             borderStyleClassName={`${
@@ -78,6 +98,15 @@ const Navbar = () => {
             } `}
           />
         </ul>
+        {showNavServices && (
+          <div
+            className="absolute left-0 top-[72px] w-full z-40"
+            onMouseEnter={() => setShowNavServices(true)}
+            onMouseLeave={() => setShowNavServices(false)}
+          >
+            <NavServicesCard />
+          </div>
+        )}
       </aside>
       {openNav && (
         <aside className="fixed inset-0 z-50 flex flex-col items-center  bg-white ">

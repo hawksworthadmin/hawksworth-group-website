@@ -29,6 +29,7 @@ const config: Config = {
         "3xl": "-6px 6px 4px rgba(0, 0, 0, 0.08)",
         "4xl": "-12px 12px 4px rgba(0, 0, 0, 0.08)",
         "custom-light": "0px 4px 6px rgba(0, 0, 0, 0.05)",
+        "custom-dark": "0px 4px 4px rgba(0, 0, 0, 0.01)",
       },
       backgroundImage: {
         "blue-gradient": "linear-gradient(-45deg, #021859 60%, #0434BF 100% )",
@@ -37,6 +38,7 @@ const config: Config = {
       },
       backdropBlur: {
         "200": "200px",
+        "80":"80px"
       },
     },
   },

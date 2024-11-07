@@ -1,5 +1,5 @@
 import CareerListingsSection from "@/components/CareerListingsSection";
-// import CareersHeroSection from "@/components/CareersHeroSection";
+import CareersHeroSection from "@/components/CareersHeroSection";
 import StyledSection from "@/components/common/StyledSection";
 import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -8,7 +8,7 @@ import React from "react";
 const Careers = () => {
   return (
     <div>
-      {/* <CareersHeroSection /> */}
+      <CareersHeroSection />
 
       <StyledSection containerClassname="bg-[#F3F3F3]  py-[100px]">
         <StyledHeaderText

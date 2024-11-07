@@ -8,6 +8,12 @@ export interface FooterCategory {
   links: FooterLink[];
 }
 
+export interface GroupSocialMedia {
+  link: string;
+  icon: string;
+  name: string;
+}
+
 export const footerCategories: FooterCategory[] = [
   {
     title: "About",
@@ -40,5 +46,28 @@ export const footerCategories: FooterCategory[] = [
       { label: "Privacy Policy", href: "" },
       { label: "Terms of Use", href: "" },
     ],
+  },
+];
+
+export const groupSocialMedia: GroupSocialMedia[] = [
+  {
+    link: " ",
+    icon: "/assets/svg/InstagramIcon.svg",
+    name: "Instagram",
+  },
+  {
+    link: " ",
+    icon: "/assets/svg/TwitterIcon.svg",
+    name: "Twitter",
+  },
+  {
+    link: " ",
+    icon: "/assets/svg/FacebookIcon.svg",
+    name: "Facebook",
+  },
+  {
+    link: " ",
+    icon: "/assets/svg/LinkedinIcon.svg",
+    name: "Linkedin",
   },
 ];

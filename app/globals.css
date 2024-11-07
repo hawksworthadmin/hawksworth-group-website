@@ -6,19 +6,17 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 } */
+body {
+  /* color: var(--foreground);
+  background: var(--background); */
+  font-family: var(--font-averta);
+}
 .color-grade {
   background-image: linear-gradient(
     180deg,
@@ -26,4 +24,34 @@ body {
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0.87) 87%
   );
+}
+
+.vision-white {
+  @apply lg:bg-white bg-inherit;
+}
+.key-numbers-order{
+  @apply order-3 md:order-4
+}
+.key-numbers-order2{
+  @apply order-4 md:order-3
+}
+
+@keyframes scrollX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-scrollX {
+  animation: scrollX 10s linear infinite;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes bgColorChange {
+  0% { background-color: #0A0A0A; }
+  100% { background-color: red; }
 }

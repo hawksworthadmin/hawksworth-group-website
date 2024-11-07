@@ -29,7 +29,7 @@ const Button = ({
         ? "bg-primaryBlue text-white"
         : "bg-black text-white";
   const merged = cn(
-    "rounded p-[1px] font-semibold text-base diabled:opacity-75 cursor-pointer focus:outline-none",
+    "rounded p-[1.5px] font-semibold text-base diabled:opacity-75 cursor-pointer focus:outline-none",
     className,
     variantStyle,
   );

@@ -21,7 +21,7 @@ function OverviewSlider() {
     <section className="w-full overflow-hidden mx-auto">
       <div className="relative w-full h-full overflow-hidden">
         <Slider {...settings}>
-          <div className="slide-item relative w-full h-[45rem]">
+          <div className="slide-item relative w-full lg:h-[45rem] h-[25rem]">
             <Image
               src="/assets/svg/OverviewImage.svg"
               alt="Slide 1"
@@ -31,7 +31,7 @@ function OverviewSlider() {
             />
           </div>
 
-          <div className="slide-item relative w-full h-[45rem] ">
+          <div className="slide-item relative w-full lg:h-[45rem] h-[25rem]">
             <Image
               src="/assets/svg/OverviewImage2.svg"
               alt="Slide 2"
@@ -40,7 +40,7 @@ function OverviewSlider() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="slide-item relative w-full h-[45rem]">
+          <div className="slide-item relative w-full lg:h-[45rem] h-[25rem]">
             <Image
               src="/assets/svg/OverviewImage3.svg"
               alt="Slide 3"

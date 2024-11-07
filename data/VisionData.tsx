@@ -14,7 +14,7 @@ const VisionData: VisionProps[] = [
         className={"md:w-[3.25rem] md:[h-3.25rem] w-[2.25rem] h-[2.25rem]"}
       />
     ),
-    bgColor: "lg:bg-white bg-inherit",
+    bgColor: "vision-white",
     text: "Develop comprehensive go-to-market strategy",
     subText: "to unlocking economics of scale.",
   },
@@ -34,7 +34,7 @@ const VisionData: VisionProps[] = [
         className={"md:w-[3.25rem] md:[h-3.25rem] w-[2.25rem] h-[2.25rem]"}
       />
     ),
-    bgColor: "lg:bg-white bg-inherit",
+    bgColor: "vision-white",
     text: "Secure appropriate funding",
     subText: "in grant, equity, debt, mezzanine necessary to scale operations.",
   },
@@ -55,7 +55,7 @@ const VisionData: VisionProps[] = [
         className={"md:w-[3.25rem] md:[h-3.25rem] w-[2.25rem] h-[2.25rem]"}
       />
     ),
-    bgColor: " bg-inherit lg:bg-white",
+    bgColor: "vision-white",
     text: "Develop workforce programmes and management teams",
     subText: "to ensuring long term sustainability.",
   },
