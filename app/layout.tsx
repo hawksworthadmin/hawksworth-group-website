@@ -1,16 +1,58 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import PageLayout from "@/components/layout/PageLayout";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const averta = localFont({
+  src: "./fonts/Averta/AvertaCY.otf",
+  weight: "100- 200- 300- 400- 500- 600- 700- 800- 900",
+  variable: "--font-averta",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+// const averta = localFont({
+//   src: [
+//     {
+//       path: "./fonts/Averta/AvertaDemoPE-Regular.otf",
+//       weight: "400",
+//     },
+//     {
+//       path: "./fonts/Averta/AvertaDemoPE-ExtraboldItalic.otf",
+//       weight: "900",
+//     },
+//   ],
+//   variable: "--font-averta",
+// });
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const tiempos = localFont({
+  src: [
+    {
+      path: "./fonts/Tiempos/TiemposHeadline-light.otf",
+      weight: "300",
+    },
+    {
+      path: "./fonts/Tiempos/TiemposHeadline-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "./fonts/Tiempos/TiemposHeadline-Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "./fonts/Tiempos/TiemposHeadline-Semibold.otf",
+      weight: "600",
+    },
+    {
+      path: "./fonts/Tiempos/TiemposHeadline-Bold.otf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-tiempos",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +68,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${averta.variable} ${inter.variable} ${tiempos.variable} antialiased`}
       >
-        {children}
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );
