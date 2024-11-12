@@ -32,7 +32,7 @@ const inter = Inter({
 const tiempos = localFont({
   src: [
     {
-      path: "./fonts/Tiempos/TiemposHeadline-light.otf",
+      path: "./fonts/Tiempos/TiemposHeadline-Light.otf",
       weight: "300",
     },
     {
