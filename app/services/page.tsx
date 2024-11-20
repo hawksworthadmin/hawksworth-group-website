@@ -31,6 +31,7 @@ const Services = () => {
               title={service.title}
               description={service.description}
               linkText={service.linkText}
+              outerContainerClassname="3xl:min-h-[825px]"
             />
           ))}
         </div>

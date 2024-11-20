@@ -13,6 +13,9 @@ const config: Config = {
         averta: "var(--font-averta)",
         inter: "var(--font-inter)",
       },
+      screens: {
+        "3xl": "2880px",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

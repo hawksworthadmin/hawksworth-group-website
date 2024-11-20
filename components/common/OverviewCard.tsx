@@ -22,8 +22,8 @@ const OverviewCard = ({
   return (
     <StyledSection
       containerClassname={classNames(
-        "lg:pb-20 pt-10 pb-[60px] text-center lg:text-left",
-        containerClassname,
+        "lg:pb-20 pt-10 pb-[60px] text-center lg:text-left 3xl:px-96",
+        containerClassname
       )}
       noPadding={true}
     >

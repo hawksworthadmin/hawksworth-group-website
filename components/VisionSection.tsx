@@ -17,8 +17,8 @@ const VisionItem: React.FC<VisionProps> = ({
 }) => (
   <div
     className={cn(
-      `border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-[18.75rem] w-full md:w-[30.1rem]`,
-      bgColor,
+      `border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-[18.75rem] w-full`,
+      bgColor
     )}
   >
     <div className="pb-10 lg:pb-0">{icon}</div>
@@ -29,40 +29,48 @@ const VisionItem: React.FC<VisionProps> = ({
   </div>
 );
 
+const EmptyBox = () => (
+  <div
+    className={cn(
+      `bg-inherit md:h-[18rem] h-[18.75rem] w-full hidden lg:block`
+    )}
+  ></div>
+);
+
 const VisionSection = () => {
   const VisionData = VisionDataComponent();
 
   return (
     <section className="bg-opacYellow">
-      {/* Boxes 1 and 2 in a grid layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="place-self-start">
+      <section className="bg-transparent max-w-[1440px] mx-auto">
+        {/* Boxes 1 and 2 in a grid layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3">
           {VisionData[0] && <VisionItem {...VisionData[0]} />}
-        </div>
-        <div className="place-self-end">
+          <EmptyBox />
           {VisionData[1] && <VisionItem {...VisionData[1]} />}
         </div>
-      </div>
 
-      {/* Box 3 centered using flex layout */}
-      <div className="flex justify-center">
-        {VisionData[2] && <VisionItem {...VisionData[2]} />}
-      </div>
-
-      {/* Boxes 4 and 5 in a grid layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="place-self-start">
-          {VisionData[3] && <VisionItem {...VisionData[3]} />}
+        {/* Box 3 centered using flex layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          <EmptyBox />
+          {VisionData[2] && <VisionItem {...VisionData[2]} />}
+          <EmptyBox />
         </div>
-        <div className="place-self-end">
+
+        {/* Boxes 4 and 5 in a grid layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          {VisionData[3] && <VisionItem {...VisionData[3]} />}
+          <EmptyBox />
           {VisionData[4] && <VisionItem {...VisionData[4]} />}
         </div>
-      </div>
 
-      {/* Box 6 centered using flex layout */}
-      <div className="flex justify-center">
-        {VisionData[5] && <VisionItem {...VisionData[5]} />}
-      </div>
+        {/* Box 6 centered using flex layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          <EmptyBox />
+          {VisionData[5] && <VisionItem {...VisionData[5]} />}
+          <EmptyBox />
+        </div>
+      </section>
     </section>
   );
 };
