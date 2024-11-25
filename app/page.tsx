@@ -90,6 +90,7 @@ export default function Home() {
 
         <OverviewSlider />
       </StyledSection>
+
       <StyledSection containerClassname="pt-16" noPadding={true}>
         <StyledHeaderText
           containerClassname="w-full flex flex-col items-center"
@@ -103,8 +104,8 @@ export default function Home() {
           text="Testimonials and Partners"
           textClassname="font-tiempos font-bold text-white pb-6"
         />
-        <div className="bg-white/5  h-[40.75rem] flex flex-col lg-flex-row items-center lg:items-end lg:justify-center lg:px-10">
-          <div className="lg:w-[40%] w-full lg:h-[31.125rem] h-[13.375rem] relative overflow-hidden lg:absolute lg:left-20 left-0">
+        <div className="bg-white/5  h-[40.75rem] flex flex-col lg-flex-row items-center lg:items-end lg:justify-center lg:px-10 3xl:max-w-[125rem]">
+          <div className="lg:w-[40%] w-full lg:h-[31.125rem] h-[13.375rem] relative overflow-hidden lg:absolute lg:left-20 3xl:left-40 left-0">
             <Image
               src="/assets/svg/OverviewImage.svg"
               alt="Slide 1"
@@ -153,7 +154,7 @@ export default function Home() {
               linkText="Learn More"
               link={items.link}
               imageUrl={items.imageUrl}
-              outerContainerClassname="w-[600px] lg:h-[525px] w-full"
+              outerContainerClassname="w-[600px] lg:h-[525px] 3xl:min-h-[825px] w-full"
               containerClassname="lg:px-5"
               glassCardClassName="lg:px-7 lg:py-6"
               styleHeaderClassName="items-start"
