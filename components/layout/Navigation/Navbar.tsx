@@ -25,7 +25,10 @@ const navLinks: NavLink[] = [
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const requiresUpdatedNav = pathname === "/blog" || pathname === "/careers";
+  const requiresUpdatedNav =
+    pathname === "/blog" ||
+    pathname === "/careers" ||
+    pathname.startsWith("/blog/");
   const blogNavColor = pathname === "/careers";
   const [openNav, setOpenNav] = useState(false);
   const [showNavServices, setShowNavServices] = useState(false);
@@ -97,7 +100,7 @@ const Navbar = () => {
             borderStyleClassName={`${
               requiresUpdatedNav
                 ? "bg-primaryBlue text-white hover:text-textBlue hover:bg-white"
-                : "bg-white hover:bg-black/[85%] hover:text-textBlue"
+                : "bg-white hover:bg-black/[85%] hover:text-white"
             } `}
           />
         </ul>

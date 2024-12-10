@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import StyledText from "../common/StyledText";
+import { useRouter } from "next/navigation";
 
 export interface PostCardProps {
   imageUrl: string;
@@ -20,7 +23,15 @@ const BlogPostCard = ({
   date,
   readTime,
   category,
+  id,
 }: PostCardProps) => {
+  const router = useRouter();
+
+  // Navigate to the individual blog post page using the post's id
+  const handleViewBlogPost = () => {
+    router.push(`/blog/${id}`);
+  };
+
   return (
     <div className="lg:w-[392px] w-full">
       <div className="mb-5 lg:mb-6">
@@ -51,8 +62,10 @@ const BlogPostCard = ({
         </div>
 
         <StyledText
-          textClassname="mt-2 text-lg lg:text-xl text-customBlack"
+          textClassname="mt-2 text-lg lg:text-xl text-customBlack cursor-pointer"
           variant="secondary"
+          isButton
+          onClick={handleViewBlogPost}
         >
           {title}
         </StyledText>

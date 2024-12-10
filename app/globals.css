@@ -36,36 +36,25 @@ body {
   @apply order-4 md:order-3;
 }
 
-@keyframes scrollX {
+@keyframes auto-scroll {
   0% {
     transform: translateX(0);
   }
-  50% {
+  100% {
     transform: translateX(-100%);
   }
-  100% {
-    transform: translateX(0);
-  }
 }
 
-.animate-scrollX {
-  animation: scrollX 10s linear infinite;
+.animate-auto-scroll {
+  display: inline-flex;
+  animation: auto-scroll 30s linear infinite;
+}
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes bgColorChange {
-  0% {
-    background-color: #0a0a0a;
-  }
-  100% {
-    background-color: red;
-  }
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
