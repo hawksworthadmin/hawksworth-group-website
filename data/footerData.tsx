@@ -1,3 +1,8 @@
+import FacebookIcon from "@/public/assets/svg-icon/FacebookIcon";
+import InstagramIcon from "@/public/assets/svg-icon/InstagramIcon";
+import LinkedinIcon from "@/public/assets/svg-icon/LinkedinIcon";
+import TwiterIcon from "@/public/assets/svg-icon/Twitter";
+
 export interface FooterLink {
   label: string;
   href: string;
@@ -10,7 +15,7 @@ export interface FooterCategory {
 
 export interface GroupSocialMedia {
   link: string;
-  icon: string;
+  icon: JSX.Element;
   name: string;
 }
 
@@ -52,22 +57,22 @@ export const footerCategories: FooterCategory[] = [
 export const groupSocialMedia: GroupSocialMedia[] = [
   {
     link: " ",
-    icon: "/assets/svg/InstagramIcon.svg",
+    icon: <InstagramIcon />,
     name: "Instagram",
   },
   {
     link: " ",
-    icon: "/assets/svg/TwitterIcon.svg",
+    icon: <TwiterIcon />,
     name: "Twitter",
   },
   {
     link: " ",
-    icon: "/assets/svg/FacebookIcon.svg",
+    icon: <FacebookIcon />,
     name: "Facebook",
   },
   {
     link: " ",
-    icon: "/assets/svg/LinkedinIcon.svg",
+    icon: <LinkedinIcon />,
     name: "Linkedin",
   },
 ];

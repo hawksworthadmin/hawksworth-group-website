@@ -19,7 +19,7 @@ const Blog = () => {
           containerClassname="flex justify-center lg:mb-12 mb-10"
         />
 
-        <div className="flex flex-wrap lg:gap-4 gap-2 justify-center cursor-pointer">
+        <div className="flex lg:flex-wrap lg:gap-4 gap-2 lg:justify-center overflow-x-auto whitespace-nowrap cursor-pointer no-scrollbar">
           {categories.map((category, index) => (
             <CategoriesCard key={index} text={category} />
           ))}
@@ -39,7 +39,7 @@ const Blog = () => {
           }
         />
       </div>
-      <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap">
+      <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap no-scrollbar">
         {["Latest", ...categories].map((category, index) => (
           <StyledText
             key={index}

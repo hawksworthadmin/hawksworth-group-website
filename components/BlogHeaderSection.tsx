@@ -54,7 +54,7 @@ const BlogHeaderSection = () => {
           alt={""}
           height={600}
           width={1512}
-            className="w-full object-cover"
+          className="w-full object-cover"
         />
       </div>
     </div>

@@ -14,8 +14,8 @@ import Link from "next/link";
 
 const subsidiaries = [
   { name: "Hawksworth Advisors", href: "" },
-  { name: "Hawksworth Insights", href: "" },
-  { name: "Hawksworth capital", href: "" },
+  { name: "Hawksworth Insight", href: "" },
+  { name: "Hawksworth Capital", href: "" },
   { name: "Hawksworth Venture", href: "" },
 ];
 
@@ -37,39 +37,27 @@ export default function Home() {
           />
         }
       />
-      <article
-        className="w-full h-[4rem] bg-[#0A0A0A] flex justify-between items-center lg:px-10 px-4 transition-colors duration-1000"
-        // style={{
-        //   animation: "bgColorChange 2s ease-in-out forwards 6s",
-        // }}
-      >
-        <StyledText
-          variant="secondary"
-          textClassname="text-lg text-white transition-all duration-1000"
-          // style={{
-          //   animation: "fadeOut 1s forwards 4s",
-          // }}
-        >
-          Our Subsidiaries
-        </StyledText>
-        <div
-          className="h-full flex gap-4 transition-transform duration-1000"
-          // style={{
-          //   animation:
-          //     "scrollX 3s ease-in-out 2, fadeOut 1s ease-in forwards 4s",
-          // }}
-        >
-          {subsidiaries.map((subsidiary, index) => (
-            <Link
-              className="h-full hover:bg-primaryYellow inline-flex items-center text-sm font-400 text-[#E8E8E8] px-6"
-              href={subsidiary.href}
-              key={index}
-            >
-              {subsidiary.name}
-            </Link>
-          ))}
-        </div>
-      </article>
+
+      <section className=" h-[4rem] bg-[#0A0A0A]  overflow-x-auto no-scrollbar">
+        <article className="w-full h-full  flex justify-between items-center lg:px-10 px-4 animate-auto-scroll">
+          <div className="h-full flex items-center whitespace-nowrap">
+            <StyledText textClassname="text-lg text-white font-tiempos font-bold">
+              Our Subsidiaries
+            </StyledText>
+          </div>
+          <div className="h-full flex gap-4 w-40 lg:w-full  lg:justify-end justify-start">
+            {subsidiaries.map((subsidiary, index) => (
+              <Link
+                className="h-full hover:bg-primaryYellow inline-flex items-center text-sm font-medium text-[#E8E8E8] px-6 whitespace-nowrap"
+                href={subsidiary.href}
+                key={index}
+              >
+                {subsidiary.name}
+              </Link>
+            ))}
+          </div>
+        </article>
+      </section>
 
       <StyledSection
         containerClassname="py-16 px-0 lg:px-[120px]"
