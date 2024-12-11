@@ -18,6 +18,7 @@ export default function Home() {
         <div
           style={{ backgroundImage: `url(/assets/images/image-12.png)` }}
           className="bg-cover bg-center"
+          id="vision-section"
         >
           <StyledHeaderText
             text="Our Vision & Mission"
@@ -29,7 +30,7 @@ export default function Home() {
         </div>
         <VisionSection />
       </StyledSection>
-      <StyledSection noPadding={true}>
+      <StyledSection noPadding={true} id="company-history">
         <OverviewCard
           header="COMPANY HISTORY"
           text="Founded with the mission to bridge the gap between innovative
@@ -50,7 +51,7 @@ export default function Home() {
           />
         </div>
       </StyledSection>
-      <StyledSection containerClassname="py-20">
+      <StyledSection containerClassname="py-20" id="leadership-profiles">
         <StyledHeaderText
           text="Leadership profiles"
           textClassname="font-tiempos font-bold text-black pb-6"

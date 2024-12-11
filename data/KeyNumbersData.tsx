@@ -1,8 +1,8 @@
 import WalletIcon from "@/public/assets/svg-icon/WalletIcon";
 import UsersIcon from "@/public/assets/svg-icon/UsersIcon";
 import EngagementsIcon from "@/public/assets/svg-icon/EngagementsIcon";
-import StrategyIcon from "@/public/assets/svg-icon/StrategyIcon";
 import { KeyNumbersProp } from "@/components/Cards/KeyNumbersCard";
+import PartnershipsIcon from "@/public/assets/svg-icon/PartnershipIcon";
 
 // Define the KeyNumbersData array
 const KeyNumbersData: KeyNumbersProp[] = [
@@ -53,9 +53,10 @@ const KeyNumbersData: KeyNumbersProp[] = [
     subtitle: "with global industry leaders.",
     value: "20+",
     icon: (
-      <StrategyIcon
+      <PartnershipsIcon
         className={"w-[3.75rem] h-[3.75rem] lg:w-[7.5rem] lg:h-[7.5rem]"}
       />
+
     ),
     bgColor: "bg-opacYellow key-numbers-order",
     titleColor: "text-primaryYellow",

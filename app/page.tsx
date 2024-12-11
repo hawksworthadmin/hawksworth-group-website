@@ -143,8 +143,8 @@ export default function Home() {
               link={items.link}
               imageUrl={items.imageUrl}
               outerContainerClassname="w-[600px] lg:h-[525px] 3xl:min-h-[825px] w-full"
-              containerClassname="lg:px-5"
-              glassCardClassName="lg:px-7 lg:py-6"
+              containerClassname="lg:!px-5"
+              glassCardClassName="lg:!px-7 lg:!py-6"
               styleHeaderClassName="items-start"
               textClassname="text-white font-tiempos font-bold lg:text-[22px]"
               subTextClassname="text-base font-normal"

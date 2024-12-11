@@ -10,7 +10,7 @@ const Careers = () => {
     <div>
       <CareersHeroSection />
 
-      <StyledSection containerClassname="bg-[#F3F3F3]  py-[100px]">
+      <StyledSection containerClassname="bg-[#F3F3F3]  py-[100px]" id="job-listings">
         <StyledHeaderText
           text="Job Listings & Application"
           subText="At Hawksworth Group, we are always on the lookout for talented individuals who share our passion for innovation, leadership, and impact. Explore current job openings across our group and subsidiaries."
@@ -22,7 +22,7 @@ const Careers = () => {
         </div>
       </StyledSection>
 
-      <StyledSection containerClassname="py-[100px]">
+      <StyledSection containerClassname="py-[100px]" id="employee-testimonials">
         <StyledHeaderText
           text="Employee Testimonials"
           containerClassname="flex flex-col items-center text-center justify-center lg:mb-20 mb-6 lg:w-1/2 mx-auto"

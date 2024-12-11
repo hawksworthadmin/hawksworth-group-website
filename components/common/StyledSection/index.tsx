@@ -6,11 +6,13 @@ const StyledSection = ({
   noPadding = false,
   containerClassname,
   imageUrl,
+  id
 }: {
   children: ReactNode;
   noPadding?: boolean;
   containerClassname?: string;
-  imageUrl?: string;
+    imageUrl?: string;
+  id?:string
 }) => {
   return (
     <section
@@ -23,6 +25,7 @@ const StyledSection = ({
         containerClassname,
       )}
       style={{ backgroundImage: `url(${imageUrl})` }}
+      id={id}
     >
       {children}
     </section>
