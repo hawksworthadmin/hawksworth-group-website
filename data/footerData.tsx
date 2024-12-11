@@ -23,17 +23,20 @@ export const footerCategories: FooterCategory[] = [
   {
     title: "About",
     links: [
-      { label: "Vision & Mission", href: "" },
-      { label: "Company History", href: "" },
-      { label: "Leadership Profiles", href: "" },
+      { label: "Vision & Mission", href: "/about#vision-section" },
+      { label: "Company History", href: "/about#company-history" },
+      { label: "Leadership Profiles", href: "/about#leadership-profiles" },
     ],
   },
   {
     title: "Culture",
     links: [
-      { label: "Job Listings", href: "" },
-      { label: "Employee Testimonials", href: "" },
-      { label: "Blog", href: "" },
+      { label: "Job Listings", href: "/careers#job-listings" },
+      {
+        label: "Employee Testimonials",
+        href: "/careers#employee-testimonials",
+      },
+      { label: "Blog", href: "/blog" },
     ],
   },
   {
