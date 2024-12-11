@@ -10,7 +10,10 @@ const Careers = () => {
     <div>
       <CareersHeroSection />
 
-      <StyledSection containerClassname="bg-[#F3F3F3]  py-[100px]" id="job-listings">
+      <StyledSection
+        containerClassname="bg-[#F3F3F3]  py-[100px]"
+        id="job-listings"
+      >
         <StyledHeaderText
           text="Job Listings & Application"
           subText="At Hawksworth Group, we are always on the lookout for talented individuals who share our passion for innovation, leadership, and impact. Explore current job openings across our group and subsidiaries."

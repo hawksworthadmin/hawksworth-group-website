@@ -6,13 +6,13 @@ const StyledSection = ({
   noPadding = false,
   containerClassname,
   imageUrl,
-  id
+  id,
 }: {
   children: ReactNode;
   noPadding?: boolean;
   containerClassname?: string;
-    imageUrl?: string;
-  id?:string
+  imageUrl?: string;
+  id?: string;
 }) => {
   return (
     <section

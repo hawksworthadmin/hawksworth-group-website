@@ -56,7 +56,6 @@ const KeyNumbersData: KeyNumbersProp[] = [
       <PartnershipsIcon
         className={"w-[3.75rem] h-[3.75rem] lg:w-[7.5rem] lg:h-[7.5rem]"}
       />
-
     ),
     bgColor: "bg-opacYellow key-numbers-order",
     titleColor: "text-primaryYellow",

@@ -18,7 +18,7 @@ export type StyledTextProps = {
   hasArrowIcon?: boolean;
   style?: React.CSSProperties;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
-  isButton?: boolean; // New prop to indicate if it's a button
+  isButton?: boolean;
 };
 
 const StyledText = ({
@@ -34,7 +34,7 @@ const StyledText = ({
   hasArrowIcon = true,
   style,
   onClick,
-  isButton = false, // Default is false
+  isButton = false,
 }: StyledTextProps) => {
   return (
     <>
@@ -57,7 +57,6 @@ const StyledText = ({
           {hasArrowIcon && <ArrowIcon stroke={stroke} />}
         </Link>
       ) : isButton ? (
-        // If it's a button, wrap the text inside a <button> element
         <button
           onClick={onClick}
           className={classNames(
