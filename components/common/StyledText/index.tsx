@@ -19,6 +19,8 @@ export type StyledTextProps = {
   style?: React.CSSProperties;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   isButton?: boolean;
+  target?: string
+  rel?:string
 };
 
 const StyledText = ({
@@ -35,21 +37,25 @@ const StyledText = ({
   style,
   onClick,
   isButton = false,
+  target,
+  rel
 }: StyledTextProps) => {
   return (
     <>
       {isLink ? (
         <Link
           href={href}
+          target={target}
+          rel={rel}
           className={classNames(
             "inline-flex gap-1 items-center border-b-2 border-b-transparent  hover:border-b-primaryYellow cursor-pointer",
-            linkContainerClassname,
+            linkContainerClassname
           )}
         >
           <p
             className={classNames(
               "text-primaryBlue lg:text-lg text-sm font-bold",
-              textClassname,
+              textClassname
             )}
           >
             {linkText}
@@ -65,7 +71,7 @@ const StyledText = ({
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
             },
-            textClassname,
+            textClassname
           )}
           style={style}
         >
@@ -79,7 +85,7 @@ const StyledText = ({
             {
               "font-bold": variant === "secondary",
               "font-tiempos font-bold": fontType === "secondary",
-            },
+            }
           )}
           style={style}
         >

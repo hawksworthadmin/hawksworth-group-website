@@ -45,9 +45,9 @@ const Navbar = () => {
             blogNavColor
               ? "bg-white backdrop-blur-80 border-[#F3F3F3]"
               : requiresUpdatedNav
-                ? "bg-[#FDFDFD] border-[#DEDEDE80]/50 backdrop-blur-80"
-                : "bg-[#1819190D]/5 backdrop-blur-200"
-          } `,
+              ? "bg-[#FDFDFD] border-[#DEDEDE80]/50 backdrop-blur-80"
+              : "bg-[#1819190D]/5 backdrop-blur-200"
+          } `
         )}
       >
         <Image
@@ -81,7 +81,7 @@ const Navbar = () => {
                 className={cn(
                   `text-base ${
                     requiresUpdatedNav ? "text-black" : "text-white"
-                  } border-b-2 border-b-transparent hover:border-b-secondaryYellow pb-1 hover:font-bold cursor-pointer ${className}`,
+                  } border-b-2 border-b-transparent hover:border-b-secondaryYellow pb-1 hover:font-bold cursor-pointer ${className}`
                 )}
               >
                 {label}
@@ -89,7 +89,9 @@ const Navbar = () => {
             </li>
           ))}
           <Button
-            onClick={() => console.log("explore")}
+            onClick={() => {
+              router.push("/#subsidiaries-details");
+            }}
             label="Explore"
             variant="primary"
             className={`${

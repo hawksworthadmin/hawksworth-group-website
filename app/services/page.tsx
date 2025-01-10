@@ -13,7 +13,7 @@ const Services = () => {
         imageUrl="/assets/images/services-hero.webp"
         header="Comprehensive services tailored to "
         subheader="your needs"
-        description="At Hawksworth Group, we offer a wide range of services designed to help businesses grow, adapt, and thrive. Whether you're looking for strategic advisory, data insights, investment opportunities, or venture incubation, we have the expertise to support your goals."
+        description="At Hawksworth, we offer a wide range of services designed to help businesses grow, adapt, and thrive. Whether you're looking for strategic advisory, data insights, investment opportunities, or venture incubation, we have the expertise to support your goals."
       />
 
       <StyledSection containerClassname="py-[120px] lg:px-[80px]">
@@ -29,6 +29,7 @@ const Services = () => {
               key={service.id.toString()}
               imageUrl={service.imageUrl}
               title={service.title}
+              link={service.link}
               description={service.description}
               linkText={service.linkText}
               outerContainerClassname="3xl:min-h-[825px]"

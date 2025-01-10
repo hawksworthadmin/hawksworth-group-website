@@ -38,7 +38,7 @@ const GlassMorphismCard = ({
     <div
       className={classNames(
         "relative lg:h-[620px] h-[400px] drop-shadow-4xl rounded",
-        outerContainerClassname,
+        outerContainerClassname
       )}
     >
       <Image
@@ -52,13 +52,13 @@ const GlassMorphismCard = ({
         <div
           className={classNames(
             "w-full h-full flex items-end justify-end lg:px-[60px] lg:py-14",
-            glassCardClassName,
+            glassCardClassName
           )}
         >
           <div
             className={classNames(
               "w-full h-fit py-6 px-4 lg:py-6 lg:px-10 bg-white/[8%] lg:rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-10 border border-white/45 text-white",
-              containerClassname,
+              containerClassname
             )}
           >
             {extraDetail}
@@ -77,6 +77,8 @@ const GlassMorphismCard = ({
                   isLink
                   textClassname="text-white font-bold text-base"
                   href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 />
               </div>
             )}

@@ -15,7 +15,10 @@ const BlogPostsSection = () => {
   }));
 
   return (
-    <StyledSection containerClassname="lg:pt-20 lg:pb-26 py-[60px] space-y-16 lg:space-y-20">
+    <StyledSection
+      noPadding
+      containerClassname="lg:pt-20 lg:pb-26 py-[60px] space-y-16 lg:space-y-20  px-6 lg:px-20 "
+    >
       {postsByCategory.map(({ categoryName, posts }) => (
         <div key={categoryName} className="">
           <StyledHeaderText
@@ -23,7 +26,7 @@ const BlogPostsSection = () => {
             containerClassname="lg:mb-10 mb-6 text-center lg:text-left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 border gap-12 bg-red-500">
             {posts.map((post) => (
               <BlogPostCard key={post.id.toString()} {...post} />
             ))}

@@ -11,26 +11,40 @@ import GlassMorphismCard from "@/components/Cards/GlassMorphismCard";
 import { ViewSubsidiariesData } from "@/data/ViewSubsidiareisData";
 import OverviewCard from "@/components/common/OverviewCard";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const subsidiaries = [
-  { name: "Hawksworth Advisors", href: "" },
+  {
+    name: "Hawksworth Advisors",
+    href: "https://hawksworth-advisors-website.vercel.app/",
+  },
   { name: "Hawksworth Insight", href: "" },
-  { name: "Hawksworth Capital", href: "" },
-  { name: "Hawksworth Venture", href: "" },
+  {
+    name: "Hawksworth Capital",
+    href: "https://hawksworth-capital-website.vercel.app/",
+  },
+  {
+    name: "Hawksworth Venture",
+    href: "https://hawksworth-ventures-website.vercel.app/",
+  },
 ];
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <HeroSection
         imageUrl="/assets/svg/hero.svg"
         header="Empowering Businesses with Innovative Solutions Across "
         subheader="Finance, Insights, Capital, and Ventures."
-        description="Hawksworth Group is a global leader in business advisory, investment, and innovation, serving industries with forward-thinking strategies and comprehensive services."
+        description="Hawksworth is a global leader in business advisory, investment, and innovation, serving industries with forward-thinking strategies and comprehensive services."
         button={
           <Button
             label="Explore our subsidiaries"
-            onClick={() => console.log("Explore")}
+            onClick={() => {
+              router.push("/#subsidiaries-details");
+            }}
             variant="primary"
             className="hover:bg-gradient-to-r from-white via-yellow-75 to-yellow-200 hover:text-white"
             borderStyleClassName="bg-white hover:bg-black"
@@ -66,13 +80,14 @@ export default function Home() {
       >
         <OverviewCard
           header="OVERVIEW"
-          text="  Hawksworth Group is a diversified company with a strong focus on
+          text="  Hawksworth is a diversified company with a strong focus on
               providing advisory, investment, and research services across
               various industries."
           description=" Our group is dedicated to helping businesses and organizations
                 achieve sustainable growth, identify opportunities, and execute
                 strategies that drive success."
           haslink={true}
+          href={"/#subsidiaries-details"}
           linkText="Learn more"
         />
 
@@ -127,7 +142,10 @@ export default function Home() {
           <div className="flex justify-start gap-6 mt-8"></div>
         </div>
       </section>
-      <StyledSection containerClassname="lg:px-[6.5rem] py-20">
+      <StyledSection
+        containerClassname="lg:px-[6.5rem] py-20"
+        id="subsidiaries-details"
+      >
         <StyledHeaderText
           containerClassname="w-full flex flex-col items-center"
           text="Our Subsidiaries"
