@@ -34,7 +34,7 @@ export default function Home() {
         <OverviewCard
           header="COMPANY HISTORY"
           text="Founded with the mission to bridge the gap between innovative
-              ideas and successful execution, Hawksworth Group has evolved into
+              ideas and successful execution, Hawksworth has evolved into
               a global leader in advisory, investment, and research services."
           description="With a diverse portfolio and a team of forward-thinking
                 professionals, we have expanded our reach to multiple industries

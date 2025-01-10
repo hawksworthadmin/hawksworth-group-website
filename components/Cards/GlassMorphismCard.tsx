@@ -77,6 +77,8 @@ const GlassMorphismCard = ({
                   isLink
                   textClassname="text-white font-bold text-base"
                   href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 />
               </div>
             )}

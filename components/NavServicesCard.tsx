@@ -31,6 +31,8 @@ const NavServicesCard = () => {
             <StyledText
               textClassname="font-semibold text-base text-primaryYellow"
               isLink
+              target="_blank"
+              rel="noopener noreferrer"
               linkText="Explore"
               stroke="#C49700"
               href={item.href}

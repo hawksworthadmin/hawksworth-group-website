@@ -89,7 +89,9 @@ const Navbar = () => {
             </li>
           ))}
           <Button
-            onClick={() => console.log("explore")}
+            onClick={() => {
+              router.push("/#subsidiaries-details");
+            }}
             label="Explore"
             variant="primary"
             className={`${

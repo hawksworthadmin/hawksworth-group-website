@@ -3,7 +3,7 @@ export const ViewSubsidiariesData = [
     header: "Hawksworth Advisors",
     description:
       "Strategic advisory and transformation services to guide organizations through complex financial decisions.",
-    link: "/",
+    link: "https://hawksworth-advisors-website.vercel.app/",
     imageUrl: "/assets/svg/AdvisorsBG.svg",
   },
   {
@@ -19,7 +19,7 @@ export const ViewSubsidiariesData = [
     description:
       "Asset management and investment services that foster long-term value creation and growth.",
 
-    link: "/",
+    link: "https://hawksworth-capital-website.vercel.app/",
     imageUrl: "/assets/svg/CaptialBG.svg",
   },
   {
@@ -27,7 +27,7 @@ export const ViewSubsidiariesData = [
     description:
       "Incubation, mentorship, and funding for startups and entrepreneurs across various industries.",
 
-    link: "/",
+    link: "https://hawksworth-ventures-website.vercel.app/",
     imageUrl: "/assets/svg/VentureBG.svg",
   },
 ];

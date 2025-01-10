@@ -10,6 +10,7 @@ interface OverviewCardProps {
   haslink?: boolean;
   linkText?: string;
   containerClassname?: string;
+  href?: string;
 }
 const OverviewCard = ({
   text,
@@ -18,6 +19,7 @@ const OverviewCard = ({
   haslink = false,
   linkText,
   containerClassname,
+  href,
 }: OverviewCardProps) => {
   return (
     <StyledSection
@@ -43,6 +45,7 @@ const OverviewCard = ({
           {haslink && (
             <StyledText
               linkText={linkText}
+              href={href}
               isLink
               stroke="#021753"
               textClassname="text-left font-bold text-lg text-primaryBlue"

@@ -32,6 +32,8 @@ const FooterLayout = () => {
             {groupSocialMedia.map((item, index) => (
               <Link
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
                 aria-label={`Follow us on ${item.name}`}
               >
@@ -57,6 +59,8 @@ const FooterLayout = () => {
                   <li key={link.label}>
                     <Link
                       href={link.href}
+                      target={link.target}
+                      rel={link.rel}
                       className="text-base text-lightGrey text-nowrap border-b-2 border-transparent hover:border-b-secondaryYellow pb-1 hover:font-medium hover:text-darkGrey"
                     >
                       {link.label}
