@@ -26,7 +26,7 @@ const BlogPostsSection = () => {
             containerClassname="lg:mb-10 mb-6 text-center lg:text-left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 border gap-12 bg-red-500">
+          <div className="grid grid-cols-1 md:grid-cols-3 border gap-12">
             {posts.map((post) => (
               <BlogPostCard key={post.id.toString()} {...post} />
             ))}

@@ -39,15 +39,20 @@ const Blog = () => {
           }
         />
       </div>
-      <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap no-scrollbar">
-        {["Latest", ...categories].map((category, index) => (
-          <StyledText
-            key={index}
-            textClassname="font-400 text-base flex items-center h-full text-[#747474] hover:text-textBlue border-b-2 border-transparent hover:border-primaryYellow cursor-pointer"
-          >
-            {category}
-          </StyledText>
-        ))}
+      <div className="relative">
+        <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap no-scrollbar  cursor-grab">
+          {["Latest", ...categories].map((category, index) => (
+            <StyledText
+              key={index}
+              textClassname="font-400 text-base flex items-center h-full text-[#747474] hover:text-textBlue border-b-2 border-transparent hover:border-primaryYellow cursor-pointer"
+            >
+              {category}
+            </StyledText>
+          ))}
+        </div>
+        <div className="absolute right-14 top-2/4 transform -translate-y-1/2 cursor-pointer custom-bounce-horizontal">
+          <span className="text-textBlue text-3xl font-bold">→</span>
+        </div>
       </div>
       <div className="flex justify-center items-center">
         <BlogPostsSection />

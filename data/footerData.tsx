@@ -1,4 +1,3 @@
-
 import InstagramIcon from "@/public/assets/svg-icon/InstagramIcon";
 import LinkedinIcon from "@/public/assets/svg-icon/LinkedinIcon";
 import TikTokIcon from "@/public/assets/svg-icon/TiktokIcon";
@@ -7,8 +6,8 @@ import TwiterIcon from "@/public/assets/svg-icon/Twitter";
 export interface FooterLink {
   label: string;
   href: string;
-  rel: string
-  target:string
+  rel: string;
+  target: string;
 }
 
 export interface FooterCategory {
@@ -96,8 +95,8 @@ export const footerCategories: FooterCategory[] = [
   {
     title: "Legal",
     links: [
-      { label: "Privacy Policy", href: "",rel: " ", target: "_self" },
-      { label: "Terms of Use", href: "",rel: " ", target: "_self" },
+      { label: "Privacy Policy", href: "", rel: " ", target: "_self" },
+      { label: "Terms of Use", href: "", rel: " ", target: "_self" },
     ],
   },
 ];
@@ -105,7 +104,7 @@ export const footerCategories: FooterCategory[] = [
 export const groupSocialMedia: GroupSocialMedia[] = [
   {
     link: "https://www.tiktok.com/@hawksworthgroup?_t=ZM-8svDVObCA2n&_r=1",
-    icon: <TikTokIcon/>,
+    icon: <TikTokIcon />,
     name: "Tiktok",
   },
   {
