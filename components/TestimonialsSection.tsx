@@ -1,7 +1,6 @@
 import React from "react";
 
 import TestimonialsCard from "./Cards/TestimonialsCard";
-import {testimonialsData} from "@/data/testimonialsData";
 import {createClient} from "@/prismicio";
 
 const TestimonialsSection = async () => {

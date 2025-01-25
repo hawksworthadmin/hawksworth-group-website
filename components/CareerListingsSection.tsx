@@ -1,6 +1,5 @@
 import React from "react";
 import JobListingsCard from "./Cards/JobListingsCard";
-import {JobListingsData} from "@/data/JobListingsData";
 import {createClient} from "@/prismicio";
 
 const CareerListingsSection = async () => {

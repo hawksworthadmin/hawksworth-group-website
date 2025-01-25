@@ -25,7 +25,7 @@ const BlogPostsSection = async ({categories: recentCategories}: {
             noPadding
             containerClassname="lg:pt-20 lg:pb-26 py-[60px] space-y-16 lg:space-y-20  px-6 lg:px-20 "
         >
-            {recentCategories.map((cat, i) => (
+            {recentCategories.map((cat) => (
                 <div key={cat.uid} className="">
                     <StyledHeaderText
                         text={cat.data.name || ""}
