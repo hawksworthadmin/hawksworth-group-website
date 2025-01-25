@@ -11,8 +11,8 @@ export interface JobListingsProp {
 
 const JobListingsCard = ({ image, Header, Subtext, Link }: JobListingsProp) => {
   return (
-    <div className="bg-[#FBFBFB] lg:w-[24rem] w-full lg:h-[25rem] h-[21.375rem] rounded drop-shadow-custom-light flex flex-col border border-[#FBFBFB] hover:border-secondaryYellow transition-all duration-300 ease-in-out">
-      <div className="w-full lg:h-[13.938rem] h-[10.313rem] rounded-sm relative overflow-hidden">
+    <div className="bg-[#FBFBFB] lg:w-[24rem] w-full rounded drop-shadow-custom-light flex flex-col border border-[#FBFBFB] hover:border-secondaryYellow transition-all duration-300 ease-in-out">
+      <div className="w-full min-h-[12rem] rounded-sm relative overflow-hidden">
         <Image
           src={image}
           alt="Job Listings Image"

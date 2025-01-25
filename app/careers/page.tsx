@@ -5,7 +5,7 @@ import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import React from "react";
 
-const Careers = () => {
+const Careers = async () => {
   return (
     <div>
       <CareersHeroSection />
