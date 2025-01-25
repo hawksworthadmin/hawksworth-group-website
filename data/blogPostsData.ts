@@ -2,7 +2,7 @@ import { PostCardProps } from "@/components/Cards/BlogPostCard";
 
 export const postsData: PostCardProps[] = [
   {
-    id: 1,
+    id: '1',
     categoryName: "Latest Posts",
     category: "Business Strategy & Planning",
     date: "22 Sept, 2024",
@@ -14,7 +14,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 2,
+    id: '2',
     categoryName: "Latest Posts",
     category: "Change Management",
     date: "22 Sept, 2024",
@@ -25,7 +25,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 3,
+    id: '3',
     categoryName: "Latest Posts",
     category: "Digital transformation",
     date: "22 Sept, 2024",
@@ -36,7 +36,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 4,
+    id: '4',
     categoryName: "Business Strategy & Planning",
     category: "Business Strategy & Planning",
     date: "22 Sept, 2024",
@@ -48,7 +48,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 5,
+    id: '5',
     categoryName: "Business Strategy & Planning",
     category: "Business Strategy & Planning",
     date: "22 Sept, 2024",
@@ -60,7 +60,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 6,
+    id: '6',
     categoryName: "Business Strategy & Planning",
     category: "Business Strategy & Planning",
     date: "22 Sept, 2024",
@@ -72,7 +72,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 7,
+    id: '7',
     categoryName: "Leadership & Executive Coaching",
     category: "Leadership & Executive Coaching",
     date: "22 Sept, 2024",
@@ -83,7 +83,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 8,
+    id: '8',
     categoryName: "Leadership & Executive Coaching",
     category: "Leadership & Executive Coaching",
     date: "22 Sept, 2024",
@@ -94,7 +94,7 @@ export const postsData: PostCardProps[] = [
     imageUrl: "/assets/images/dummy/blog.webp",
   },
   {
-    id: 9,
+    id: '9',
     categoryName: "Leadership & Executive Coaching",
     category: "Leadership & Executive Coaching",
     date: "22 Sept, 2024",
