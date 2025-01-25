@@ -14,11 +14,10 @@ export default function Home() {
         imageUrl="/assets/svg/AboutSectionHero.svg"
         header="About Us"
       />
-      <StyledSection containerClassname="" noPadding={true}>
+      <StyledSection containerClassname="" noPadding id={'vision-section'}>
         <div
           style={{ backgroundImage: `url(/assets/images/image-12.png)` }}
           className="bg-cover bg-center"
-          id="vision-section"
         >
           <StyledHeaderText
             text="Our Vision & Mission"
