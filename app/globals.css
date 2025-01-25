@@ -74,3 +74,32 @@ body {
 .custom-bounce-horizontal {
   animation: custom-bounce-horizontal 1s infinite;
 }
+
+.prismic_content p {
+  margin-bottom: 1.5rem;
+}
+.prismic_content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.prismic_content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.prismic_content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.prismic_content h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.prismic_content h6 {
+  font-size: 0.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}

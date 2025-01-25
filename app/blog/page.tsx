@@ -7,12 +7,31 @@ import StyledText from "@/components/common/StyledText";
 import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import Subscribe from "@/components/Subscribe";
 import React from "react";
+import {createClient} from "@/prismicio";
 
-const Blog = () => {
+const Blog = async () => {
+    const client = createClient();
+
+    const recentCategories = await client.getAllByType(
+        "categories",
+        {
+            fetchOptions: {
+                cache: "no-store",
+                next: { tags: ["prismic", "categories"] },
+            },
+            limit: 10,
+            // orderings: [
+            //     {
+            //         field: "my.blog_post.published_on",
+            //         direction: "desc",
+            //     },
+            // ],
+        },
+    );
+
   return (
     <div>
       <BlogHeaderSection />
-
       <StyledSection containerClassname="lg:p-[100px] py-[60px] px-3">
         <StyledHeaderText
           text="Explore by categories"
@@ -20,8 +39,10 @@ const Blog = () => {
         />
 
         <div className="flex lg:flex-wrap lg:gap-4 gap-2 lg:justify-center overflow-x-auto whitespace-nowrap cursor-pointer no-scrollbar">
-          {categories.map((category, index) => (
-            <CategoriesCard key={index} text={category} />
+          {recentCategories.map((category, index) => (
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error
+            <CategoriesCard key={index} text={category.data.name} />
           ))}
         </div>
       </StyledSection>
@@ -39,23 +60,23 @@ const Blog = () => {
           }
         />
       </div>
-      <div className="relative">
-        <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap no-scrollbar  cursor-grab">
-          {["Latest", ...categories].map((category, index) => (
-            <StyledText
-              key={index}
-              textClassname="font-400 text-base flex items-center h-full text-[#747474] hover:text-textBlue border-b-2 border-transparent hover:border-primaryYellow cursor-pointer"
-            >
-              {category}
-            </StyledText>
-          ))}
-        </div>
-        <div className="absolute right-14 top-2/4 transform -translate-y-1/2 cursor-pointer custom-bounce-horizontal">
-          <span className="text-textBlue text-3xl font-bold">→</span>
-        </div>
-      </div>
+      {/*<div className="relative">*/}
+      {/*  <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap no-scrollbar  cursor-grab">*/}
+      {/*    {recentCategories.map((category, index) => (*/}
+      {/*      <StyledText*/}
+      {/*        key={index}*/}
+      {/*        textClassname="font-400 text-base flex items-center h-full text-[#747474] hover:text-textBlue border-b-2 border-transparent hover:border-primaryYellow cursor-pointer"*/}
+      {/*      >*/}
+      {/*        {category.data.name}*/}
+      {/*      </StyledText>*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*  <div className="absolute right-14 top-2/4 transform -translate-y-1/2 cursor-pointer custom-bounce-horizontal">*/}
+      {/*    <span className="text-textBlue text-3xl font-bold">→</span>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <div className="flex justify-center items-center">
-        <BlogPostsSection />
+        <BlogPostsSection categories={recentCategories} />
       </div>
 
       <Subscribe />
@@ -65,17 +86,3 @@ const Blog = () => {
 
 export default Blog;
 
-const categories = [
-  "Business Strategy & Planning",
-  "Leadership & Executive Coaching",
-  "Marketing & Brand Strategy",
-  "Operational Efficiency",
-  "Organizational Development",
-  "Sustainability & ESG Consulting",
-  "Risk Management",
-  "Market Entry & Expansion",
-  "Supply Chain Optimization",
-  "Organizational Development",
-  "Compliance & Regulatory Affairs",
-  "Mergers & Acquisitions",
-];

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import StyledText from "../common/StyledText";
-import { useRouter } from "next/navigation";
+
 
 export interface PostCardProps {
   imageUrl: string;
@@ -13,7 +13,7 @@ export interface PostCardProps {
   readTime: string;
   categoryName?: string;
   category?: string;
-  id: number;
+  id: string;
 }
 
 const BlogPostCard = ({
@@ -25,22 +25,14 @@ const BlogPostCard = ({
   category,
   id,
 }: PostCardProps) => {
-  const router = useRouter();
-
-  // Navigate to the individual blog post page using the post's id
-  const handleViewBlogPost = () => {
-    router.push(`/blog/${id}`);
-  };
-
   return (
-    <div className="lg:w-[392px] w-full">
-      <div className="mb-5 lg:mb-6">
+    <article className="lg:w-[392px] w-full">
+      <div className="mb-5 lg:mb-6 h-[180px] lg:w-[392px] lg:h-[400px] relative">
         <Image
           src={imageUrl}
-          width={392}
-          height={400}
+          fill
           alt="Picture of the author"
-          className="rounded w-full h-[180px] lg:w-[392px] lg:h-[400px]"
+          className="rounded w-full absolute object-cover"
         />
       </div>
 
@@ -64,8 +56,7 @@ const BlogPostCard = ({
         <StyledText
           textClassname="mt-2 text-lg lg:text-xl text-customBlack cursor-pointer"
           variant="secondary"
-          isButton
-          onClick={handleViewBlogPost}
+          href={`/blog/${id}`}
         >
           {title}
         </StyledText>
@@ -74,7 +65,7 @@ const BlogPostCard = ({
           {description}
         </StyledText>
       </div>
-    </div>
+    </article>
   );
 };
 
