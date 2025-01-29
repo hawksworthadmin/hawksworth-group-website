@@ -76,7 +76,7 @@ const FooterLayout = () => {
       <div className="pt-8 mb-6 space-y-2 lg:hidden border-t border-[#DEDEDE]">
         <p className="text-sm text-lightGrey text-nowrap">+234802459492</p>
         <p className="text-sm text-lightGrey text-nowrap">
-          support@hawksworth.com
+          support@hawksworth.org
         </p>
       </div>
 

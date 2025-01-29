@@ -16,16 +16,16 @@ import { useRouter } from "next/navigation";
 const subsidiaries = [
   {
     name: "Hawksworth Advisors",
-    href: "https://hawksworth-advisors-website.vercel.app/",
+    href: "https://advisors.hawksworth.org",
   },
   { name: "Hawksworth Insight", href: "" },
   {
     name: "Hawksworth Capital",
-    href: "https://hawksworth-capital-website.vercel.app/",
+    href: "https://capital.hawksworth.org/",
   },
   {
     name: "Hawksworth Venture",
-    href: "https://hawksworth-ventures-website.vercel.app/",
+    href: "https://ventures.hawksworth.org/",
   },
 ];
 

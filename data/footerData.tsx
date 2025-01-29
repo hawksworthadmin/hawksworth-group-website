@@ -68,25 +68,25 @@ export const footerCategories: FooterCategory[] = [
     links: [
       {
         label: "Hawksworth Advisors",
-        href: "https://hawksworth-advisors-website.vercel.app/",
+        href: "https://advisors.hawksworth.org/",
         rel: " noopener noreferrer",
         target: "_blank",
       },
       {
         label: "Hawksworth Insights",
-        href: "",
+        href: "https://insights.hawksworth.org/",
         rel: " noopener noreferrer",
         target: "_blank",
       },
       {
         label: "Hawksworth Capital",
-        href: "https://hawksworth-capital-website.vercel.app/",
+        href: "https://capital.hawksworth.org/",
         rel: " noopener noreferrer",
         target: "_blank",
       },
       {
         label: "Hawksworth Venture",
-        href: "https://hawksworth-ventures-website.vercel.app/",
+        href: "https://ventures.hawksworth.org/",
         rel: " noopener noreferrer",
         target: "_blank",
       },

@@ -6,7 +6,7 @@ export const servicesData = [
       "Guiding businesses through transformation with expert financial advisory, corporate restructuring, and operational strategies.",
     linkText: "Explore Hawksworth Advisors",
     imageUrl: "/assets/images/strategic-advisory.webp",
-    link: "https://hawksworth-advisors-website.vercel.app/",
+    link: "https://advisors.hawksworth.org/",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const servicesData = [
       "Providing businesses with the data and analytics they need to make informed decisions and anticipate future trends.",
     linkText: "Explore Hawksworth Insights",
     imageUrl: "/assets/images/market-research.webp",
-    link: "",
+    link: "https://insights.hawksworth.org/",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const servicesData = [
       "Delivering targeted investment strategies and asset management to maximize long-term value and growth.",
     linkText: "Explore Hawksworth Capital",
     imageUrl: "/assets/images/capital-management.webp",
-    link: "https://hawksworth-capital-website.vercel.app/",
+    link: "https://capital.hawksworth.org/",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const servicesData = [
       "Supporting entrepreneurs with mentorship, funding, and partnership opportunities to turn innovative ideas into successful ventures.",
     linkText: "Explore Hawksworth Venture",
     imageUrl: "/assets/images/venture-incubation.webp",
-    link: "https://hawksworth-ventures-website.vercel.app/",
+    link: "https://ventures.hawksworth.org/",
   },
 ];
 
@@ -77,12 +77,12 @@ export const NavServicesList: NavServicesCard[] = [
       "Financial Management Advisory",
       "Operational Excellence",
     ],
-    href: "https://hawksworth-advisors-website.vercel.app/",
+    href: "https://advisors.hawksworth.org/",
   },
   {
     header: "Hawksworth Insights",
     content: ["Industry Reports", "Market Analysis", "Economic Forecasts"],
-    href: " ",
+    href: "https://insights.hawksworth.org/",
   },
   {
     header: "Hawksworth Capital",
@@ -91,11 +91,11 @@ export const NavServicesList: NavServicesCard[] = [
       "Capital Raising",
       "Strategic Advisory",
     ],
-    href: "https://hawksworth-capital-website.vercel.app/",
+    href: "https://capital.hawksworth.org/",
   },
   {
     header: "Hawksworth Ventures",
     content: ["Incubation Programs", "Acceleration Programs"],
-    href: "https://hawksworth-ventures-website.vercel.app/",
+    href: "https://ventures.hawksworth.org/",
   },
 ];
