@@ -48,17 +48,19 @@ const Blog = async () => {
       </StyledSection>
 
       <div className="bg-[url('/assets/images/dummy/image-23.png')] lg:p-20 py-6 px-5 bg-cover bg-center">
-        <GlassMorphismCard
-          imageUrl="/assets/images/feature-img.webp"
-          title="Developing a Comprehensive Risk Management Framework for Long-Term Business Success"
-          description="Risk management is essential for safeguarding a company’s assets and reputation. We outline how to build a comprehensive framework that identifies, assesses, and mitigates risks across your organization."
-          containerClassname="py-5 lg:py-6"
-          extraDetail={
-            <StyledText textClassname="!font-semibold !text-xs lg:!text-lg mb-4 lg:mb-6">
-              🎖️Featured article of the week
-            </StyledText>
+          {
+              process.env.NODE_ENV !== "production" && <GlassMorphismCard
+                  imageUrl="/assets/images/feature-img.webp"
+                  title="Developing a Comprehensive Risk Management Framework for Long-Term Business Success"
+                  description="Risk management is essential for safeguarding a company’s assets and reputation. We outline how to build a comprehensive framework that identifies, assesses, and mitigates risks across your organization."
+                  containerClassname="py-5 lg:py-6"
+                  extraDetail={
+                      <StyledText textClassname="!font-semibold !text-xs lg:!text-lg mb-4 lg:mb-6">
+                          🎖️Featured article of the week
+                      </StyledText>
+                  }
+              />
           }
-        />
       </div>
       {/*<div className="relative">*/}
       {/*  <div className="bg-[#F3F3F333]/20 border border-[#F3F3F3] w-full h-[50px] flex gap-7 lg:pl-24 pl-4 pr-4 items-center overflow-x-auto whitespace-nowrap no-scrollbar  cursor-grab">*/}

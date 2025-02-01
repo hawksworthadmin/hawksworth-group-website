@@ -27,7 +27,7 @@ export const ViewSubsidiariesData = [
     description:
       "Incubation, mentorship, and funding for startups and entrepreneurs across various industries.",
 
-    link: "https://venture.hawksworth.org",
+    link: "https://ventures.hawksworth.org",
     imageUrl: "/assets/svg/VentureBG.svg",
   },
 ];
