@@ -85,7 +85,7 @@ export const footerCategories: FooterCategory[] = [
         target: "_blank",
       },
       {
-        label: "Hawksworth Venture",
+        label: "Hawksworth Ventures",
         href: "https://ventures.hawksworth.org/",
         rel: " noopener noreferrer",
         target: "_blank",

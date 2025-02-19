@@ -1,27 +1,8 @@
 import React from "react";
 import JobListingsCard from "./Cards/JobListingsCard";
-import {createClient} from "@/prismicio";
+import {JobsDocument} from "@/prismicio-types";
 
-const CareerListingsSection = async () => {
-    const client = createClient();
-
-    const jobs = await client.getAllByType(
-        "jobs",
-        {
-            fetchOptions: {
-                cache: "no-store",
-                next: {tags: ["prismic", "jobs"]},
-            },
-            limit: 20,
-            // orderings: [
-            //     {
-            //         field: "my.blog_post.published_on",
-            //         direction: "desc",
-            //     },
-            // ],
-        },
-    );
-
+const CareerListingsSection = async ({jobs}:{jobs: JobsDocument[]}) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {jobs.map((listings, index) => {

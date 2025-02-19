@@ -4,37 +4,61 @@ import StyledSection from "@/components/common/StyledSection";
 import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import React from "react";
+import {createClient} from "@/prismicio";
 
 const Careers = async () => {
-  return (
-    <div>
-      <CareersHeroSection />
+    const client = createClient();
 
-      <StyledSection
-        containerClassname="bg-[#F3F3F3]  py-[100px]"
-        id="job-listings"
-      >
-        <StyledHeaderText
-          text="Job Listings & Application"
-          subText="At Hawksworth, we are always on the lookout for talented individuals who share our passion for innovation, leadership, and impact. Explore current job openings across our group and subsidiaries."
-          containerClassname="flex flex-col items-center text-center justify-center lg:mb-20 mb-6 lg:w-1/2 mx-auto"
-        />
+    const jobs = await client.getAllByType(
+        "jobs",
+        {
+            fetchOptions: {
+                cache: "no-store",
+                next: {tags: ["prismic", "jobs"]},
+            },
+            limit: 20,
+            // orderings: [
+            //     {
+            //         field: "my.blog_post.published_on",
+            //         direction: "desc",
+            //     },
+            // ],
+        },
+    );
+    return (
+        <div>
+            <CareersHeroSection/>
 
-        <div className="flex justify-center items-center">
-          <CareerListingsSection />
+            <StyledSection
+                containerClassname="bg-[#F3F3F3]  py-[100px]"
+                id="job-listings"
+            >
+                <StyledHeaderText
+                    text="Job Listings & Application"
+                    subText="At Hawksworth, we are always on the lookout for talented individuals who share our passion for innovation, leadership, and impact. Explore current job openings across our group and subsidiaries."
+                    containerClassname="flex flex-col items-center text-center justify-center lg:mb-20 mb-6 lg:w-1/2 mx-auto"
+                />
+
+                <div className="flex justify-center items-center">
+                    {jobs.length === 0 ? <div className={'py-36'}>
+                        <p className={'text-xl'}>
+                            No job listings available at the moment. Please check back later.
+                        </p>
+                    </div> : null}
+                    <CareerListingsSection jobs={jobs}/>
+                </div>
+            </StyledSection>
+
+            <StyledSection containerClassname="py-[100px]" id="employee-testimonials">
+                <StyledHeaderText
+                    text="Employee Testimonials"
+                    containerClassname="flex flex-col items-center text-center justify-center lg:mb-20 mb-6 lg:w-1/2 mx-auto"
+                />
+
+                <TestimonialsSection/>
+            </StyledSection>
         </div>
-      </StyledSection>
-
-      <StyledSection containerClassname="py-[100px]" id="employee-testimonials">
-        <StyledHeaderText
-          text="Employee Testimonials"
-          containerClassname="flex flex-col items-center text-center justify-center lg:mb-20 mb-6 lg:w-1/2 mx-auto"
-        />
-
-        <TestimonialsSection />
-      </StyledSection>
-    </div>
-  );
+    );
 };
 
 export default Careers;

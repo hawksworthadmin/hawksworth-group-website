@@ -23,7 +23,7 @@ export const ViewSubsidiariesData = [
     imageUrl: "/assets/svg/CaptialBG.svg",
   },
   {
-    header: "Hawksworth Venture",
+    header: "Hawksworth Ventures",
     description:
       "Incubation, mentorship, and funding for startups and entrepreneurs across various industries.",
 

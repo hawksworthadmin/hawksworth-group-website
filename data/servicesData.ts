@@ -31,7 +31,7 @@ export const servicesData = [
     title: "Venture Incubation & Funding",
     description:
       "Supporting entrepreneurs with mentorship, funding, and partnership opportunities to turn innovative ideas into successful ventures.",
-    linkText: "Explore Hawksworth Venture",
+    linkText: "Explore Hawksworth Ventures",
     imageUrl: "/assets/images/venture-incubation.webp",
     link: "https://ventures.hawksworth.org/",
   },
@@ -58,7 +58,7 @@ export const subServices = [
   },
   {
     id: 4,
-    title: "Hawksworth Venture",
+    title: "Hawksworth Ventures",
     description:
       "We specialize in nurturing startups and fostering entrepreneurial success through our comprehensive incubation and investment programs. Join our incubation programs, secure funding, and gain mentorship to turn your innovative ideas into successful ventures.",
   },
