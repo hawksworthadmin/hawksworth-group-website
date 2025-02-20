@@ -18,7 +18,7 @@ const subsidiaries = [
     name: "Hawksworth Advisors",
     href: "https://advisors.hawksworth.org",
   },
-  { name: "Hawksworth Insight", href: "" },
+  { name: "Hawksworth Insights", href: "" },
   {
     name: "Hawksworth Capital",
     href: "https://capital.hawksworth.org/",
