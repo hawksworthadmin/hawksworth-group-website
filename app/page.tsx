@@ -12,6 +12,7 @@ import { ViewSubsidiariesData } from "@/data/ViewSubsidiareisData";
 import OverviewCard from "@/components/common/OverviewCard";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Partners } from "@/data/PartnersData";
 
 const subsidiaries = [
   {
@@ -101,8 +102,46 @@ export default function Home() {
           textClassname="font-tiempos font-bold"
         />
         <KeyNumbersSection />
+        <StyledSection containerClassname="bg-white">
+          <StyledHeaderText
+            containerClassname="w-full flex flex-col items-center"
+            text="Our Partners"
+            textClassname="font-tiempos font-bold pt-10"
+          />
+          <div className="relative overflow-hidden">
+            <div className="flex gap-10 items-center justify-center w-max animate-scroll  ">
+              {Partners.map((partner) => (
+                <div
+                  key={partner.id}
+                  className="relative w-[300px] h-[280px]"
+                >
+                  <Image
+                    src={partner.image}
+                    alt={partner.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+              {/* Duplicate the list to create a seamless infinite scroll effect */}
+              {Partners.map((partner) => (
+                <div
+                  key={`duplicate-${partner.id}`}
+                  className="relative w-[300px] h-[280px] "
+                >
+                  <Image
+                    src={partner.image}
+                    alt={partner.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </StyledSection>
       </StyledSection>
-      <section className="bg-primaryBlue py-20 lg:px-48 px-10 flex flex-col items-center justify-center relative">
+      {/* <section className="bg-primaryBlue py-20 lg:px-48 px-10 flex flex-col items-center justify-center relative">
         <StyledHeaderText
           text="Testimonials and Partners"
           textClassname="font-tiempos font-bold text-white pb-6"
@@ -138,10 +177,10 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* Navigation Arrows */}
+           Navigation Arrows 
           <div className="flex justify-start gap-6 mt-8"></div>
         </div>
-      </section>
+      </section> */}
       <StyledSection
         containerClassname="lg:px-[6.5rem] py-20"
         id="subsidiaries-details"
