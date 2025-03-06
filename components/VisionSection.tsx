@@ -1,6 +1,4 @@
 import React from "react";
-import VisionDataComponent from "../data/VisionData";
-import { cn } from "@/utils/styleUtilities";
 import StyledSection from "./common/StyledSection";
 import classNames from "classnames";
 import StyledText from "./common/StyledText";
@@ -12,36 +10,36 @@ export interface VisionProps {
   icon: React.ReactNode;
 }
 
-const VisionItem: React.FC<VisionProps> = ({
-  bgColor,
-  text,
-  subText,
-  icon,
-}) => (
-  <div
-    className={cn(
-      `border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-[18.75rem] w-full`,
-      bgColor,
-    )}
-  >
-    <div className="pb-10 lg:pb-0">{icon}</div>
-    <p className="font-semibold text-[1.375] text-darkGrey">
-      {text}&nbsp;
-      <span className="font-normal">{subText}</span>
-    </p>
-  </div>
-);
+// const VisionItem: React.FC<VisionProps> = ({
+//   bgColor,
+//   text,
+//   subText,
+//   icon,
+// }) => (
+//   <div
+//     className={cn(
+//       `border-0 md:border border-[#F3F3F3] drop-shadow-custom-light  lg:p-10 py-9 px-10 flex flex-col justify-between items-center text-center lg:items-start lg:text-start md:h-[18rem] h-[18.75rem] w-full`,
+//       bgColor,
+//     )}
+//   >
+//     <div className="pb-10 lg:pb-0">{icon}</div>
+//     <p className="font-semibold text-[1.375] text-darkGrey">
+//       {text}&nbsp;
+//       <span className="font-normal">{subText}</span>
+//     </p>
+//   </div>
+// );
 
-const EmptyBox = () => (
-  <div
-    className={cn(
-      `bg-inherit md:h-[18rem] h-[18.75rem] w-full hidden lg:block`,
-    )}
-  ></div>
-);
+// const EmptyBox = () => (
+//   <div
+//     className={cn(
+//       `bg-inherit md:h-[18rem] h-[18.75rem] w-full hidden lg:block`,
+//     )}
+//   ></div>
+// );
 
 const VisionSection = () => {
-  const VisionData = VisionDataComponent();
+  // const VisionData = VisionDataComponent();
 
   return (
     <>
