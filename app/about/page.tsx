@@ -54,7 +54,7 @@ export default function Home() {
       </StyledSection>
       <StyledSection containerClassname="py-20" id="leadership-profiles">
         <StyledHeaderText
-          text="Leadership profiles"
+          text="Leadership Profiles"
           textClassname="font-tiempos font-bold text-black pb-6"
           subText="Our leadership team comprises industry experts, strategists, and entrepreneurs with decades of experience. We are united by our commitment to delivering results and building long-term relationships with our clients and partners."
           subTextClassname="font-normal text-lg lg:w-[63%] w-w-[90%] text-center"
