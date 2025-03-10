@@ -18,7 +18,8 @@ export interface NavLink {
 const navLinks: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "#" },
+  // href: "/blog" for when the blog is up and ready
   { label: "Careers", href: "/careers" },
 ];
 
@@ -92,7 +93,7 @@ const Navbar = () => {
             onClick={() => {
               router.push("/#subsidiaries-details");
             }}
-            label="Explore"
+            label="Contact Us"
             variant="primary"
             className={`${
               requiresUpdatedNav
@@ -117,9 +118,9 @@ const Navbar = () => {
         )}
       </aside>
       {openNav && (
-        <aside className="fixed inset-0 z-50 flex flex-col items-center  bg-white ">
+        <aside className="fixed inset-0 z-50 flex flex-col items-center bg-white ">
           <div className="h-[72px] border-b border-#F3F3F3  backdrop-blur-200 px-6 w-full bg-white flex items-center">
-            <div className="flex items-center justify-between w-full  ">
+            <div className="flex items-center justify-between w-full ">
               <Image
                 src="/assets/logo.svg"
                 alt="logo"
