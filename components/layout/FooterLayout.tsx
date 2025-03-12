@@ -22,7 +22,7 @@ const FooterLayout = () => {
               className="w-[127.94px] h-[14px] lg:w-[164.5px] lg:h-[18px]"
             />
 
-            <p className="mt-[18px] hidden lg:block font-normal leading-none">
+            <p className="mt-[18px] hidden lg:block font-normal leading-snug">
               Empowering Businesses with Innovative Solutions Across Finance,
               Insights, Capital, and Ventures.
             </p>
@@ -74,7 +74,7 @@ const FooterLayout = () => {
       </div>
 
       <div className="pt-8 mb-6 space-y-2 lg:hidden border-t border-[#DEDEDE]">
-        <p className="text-sm text-lightGrey text-nowrap">+234802459492</p>
+        <p className="text-sm text-lightGrey text-nowrap">+234 813 362 2561</p>
         <p className="text-sm text-lightGrey text-nowrap">
           support@hawksworth.org
         </p>

@@ -6,6 +6,7 @@ import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import VisionSection from "@/components/VisionSection";
 import LeadershipProfiles from "@/components/LeadershipProfiles";
 import OverviewCard from "@/components/common/OverviewCard";
+import CoreValuesSlider from "@/components/CoreValuesSlider";
 
 export default function Home() {
   return (
@@ -14,21 +15,6 @@ export default function Home() {
         imageUrl="/assets/svg/AboutSectionHero.svg"
         header="About Us"
       />
-      <StyledSection containerClassname="" noPadding id={'vision-section'}>
-        <div
-          style={{ backgroundImage: `url(/assets/images/image-12.png)` }}
-          className="bg-cover bg-center"
-        >
-          <StyledHeaderText
-            text="Our Vision & Mission"
-            containerClassname="w-full flex flex-col items-center py-28"
-            textClassname="font-tiempos font-bold text-black pb-6"
-            subText="Hawksworth Advisors empowers businesses with tailored strategies, secure funding, and optimized operations for sustainable growth."
-            subTextClassname="font-normal text-lg lg:w-[55%] w-[90%] text-center "
-          />
-        </div>
-        <VisionSection />
-      </StyledSection>
       <StyledSection noPadding={true} id="company-history">
         <OverviewCard
           header="COMPANY HISTORY"
@@ -50,9 +36,25 @@ export default function Home() {
           />
         </div>
       </StyledSection>
+      <StyledSection containerClassname="" noPadding id={"vision-section"}>
+        <div
+          style={{ backgroundImage: `url(/assets/images/image-12.png)` }}
+          className="bg-cover bg-center"
+        >
+          <StyledHeaderText
+            text="Our Vision, Mission & Core Values"
+            containerClassname="w-full flex flex-col items-center py-28"
+            textClassname="font-tiempos font-bold text-black pb-6"
+            subText="Hawksworth Advisors empowers businesses with tailored strategies, secure funding, and optimized operations for sustainable growth."
+            subTextClassname="font-normal text-lg lg:w-[55%] w-[90%] text-center "
+          />
+        </div>
+        <VisionSection />
+        <CoreValuesSlider />
+      </StyledSection>
       <StyledSection containerClassname="py-20" id="leadership-profiles">
         <StyledHeaderText
-          text="Leadership profiles"
+          text="Leadership Profiles"
           textClassname="font-tiempos font-bold text-black pb-6"
           subText="Our leadership team comprises industry experts, strategists, and entrepreneurs with decades of experience. We are united by our commitment to delivering results and building long-term relationships with our clients and partners."
           subTextClassname="font-normal text-lg lg:w-[63%] w-w-[90%] text-center"

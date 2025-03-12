@@ -60,7 +60,8 @@ export const footerCategories: FooterCategory[] = [
         rel: " ",
         target: "_self",
       },
-      { label: "Blog", href: "/blog", rel: " ", target: "_self" },
+      { label: "Blog", href: "#", rel: " ", target: "_self" },
+      // use (href: "/blog") for when the blog is up and ready.
     ],
   },
   {
