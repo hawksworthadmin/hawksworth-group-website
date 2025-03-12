@@ -3,7 +3,7 @@ export const ViewSubsidiariesData = [
     header: "Hawksworth Advisors",
     description:
       "Strategic advisory and transformation services to guide organizations through complex financial decisions.",
-    link: "https://hawksworth.org",
+    link: "https://advisors.hawksworth.org",
     imageUrl: "/assets/svg/AdvisorsBG.svg",
   },
   {
