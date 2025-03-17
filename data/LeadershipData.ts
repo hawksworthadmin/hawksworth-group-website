@@ -5,18 +5,59 @@ export const LeadershipData = [
     Designation: "Managing Partner",
   },
   {
-    image: "/assets/svg/ebele.svg",
-    Name: "Ebele Nwonwu",
-    Designation: "Head of Operations",
+    image: "/profile.png",
+    Name: "Barry Dyson",
+    Designation: "-",
   },
   {
-    image: "/assets/svg/ugochukwu.svg",
-    Name: "Ugochukwu Modum",
-    Designation: "Strategy Consultant",
+    image: "/profile.png",
+    Name: "Sandy Eyal",
+    Designation: "-",
   },
   {
-    image: "/assets/svg/dimeji.svg",
-    Name: "Oladimeji. A. Edu",
-    Designation: "Consultant",
+    image: "/profile.png",
+    Name: "Michael Olorunniwwo",
+    Designation: "-",
+  },
+  {
+    image: "/profile.png",
+    Name: "Daniel Kwabena",
+    Designation: "-",
+  },
+  {
+    image: "/profile.png",
+    Name: "Salewa",
+    Designation: "-",
+  },
+  {
+    image: "/profile.png",
+    Name: "Jesse Randell",
+    Designation: "-",
+  },
+  {
+    image: "/profile.png",
+    Name: "Nadia Mrahabit",
+    Designation: "-",
+  },
+  {
+    image: "/profile.png",
+    Name: "Sarah Hanachi",
+    Designation: "-",
+  },{
+    image: "/profile.png",
+    Name: "Kenneth Legesi",
+    Designation: "-",
+  },{
+    image: "/profile.png",
+    Name: "Kiptoo Towett",
+    Designation: "-",
+  }, {
+    image: "/profile.png",
+    Name: "Eyong Ebai",
+    Designation: "-",
+  },{
+    image: "/profile.png",
+    Name: "Em Ekong",
+    Designation: "-",
   },
 ];

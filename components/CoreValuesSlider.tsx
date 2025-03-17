@@ -7,11 +7,11 @@ import Image from "next/image";
 import StyledText from "./common/StyledText";
 
 const slides = [
-  { id: 1, image: "/assets/svg/OverviewImage.svg", title: "Service", description:"We are dedicated to delivering exceptional, client-centered solutions that create measurable value." },
-  { id: 2, image: "/assets/svg/OverviewImage2.svg", title: "Professionalism",description:"We uphold the highest standards of conduct, expertise, and reliability in everything we do." },
-  { id: 3, image: "/assets/svg/OverviewImage3.svg", title: "Adaptability", description:"We remian agile and innovative, constantly evovling to meet the dynamic challenges of our clients and industries." },
-  { id: 4, image: "/assets/svg/Respect.svg", title: "Respect", description: "We foster a work enviroment that values the unique perspectives and contributions of each stakeholder." },
-  { id: 5, image: "/assets/svg/Kaizen.svg", title: "Kaizen+", description:"We prioritize continous learning, innovation, and the application of expertise to deliver informed,strategic, and impactful solutions." },
+  { id: 1, image: "/assets/about/Service.jpg", title: "Service", description:"We are dedicated to delivering exceptional, client-centered solutions that create measurable value." },
+  { id: 2, image: "/assets/about/Professionalism.jpeg", title: "Professionalism",description:"We uphold the highest standards of conduct, expertise, and reliability in everything we do." },
+  { id: 3, image: "/assets/about/Adaptability.jpeg", title: "Adaptability", description:"We remian agile and innovative, constantly evovling to meet the dynamic challenges of our clients and industries." },
+  { id: 4, image: "/assets/about/Respect.jpeg", title: "Respect", description: "We foster a work enviroment that values the unique perspectives and contributions of each stakeholder." },
+  { id: 5, image: "/assets/about/Kaizen.jpg", title: "Kaizen+", description:"We prioritize continous learning, innovation, and the application of expertise to deliver informed,strategic, and impactful solutions." },
 ];
 
 function CoreValuesSlider() {
