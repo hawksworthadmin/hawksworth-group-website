@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import HeroSection from "@/components/common/HeroSection";
 import StyledSection from "@/components/common/StyledSection";
