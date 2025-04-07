@@ -115,28 +115,34 @@ export default function Home() {
               {Partners.map((partner) => (
                 <div
                   key={partner.id}
-                  className="relative w-[300px] h-[280px]"
+                  className="flex items-center justify-center p-4 bg-white/5 rounded-lg shadow-sm backdrop-blur-sm hover:scale-105 transition-transform duration-300"
                 >
+                  <div className="relative w-[180px] h-[90px]">
                   <Image
                     src={partner.image}
                     alt={partner.title}
                     fill
-                    className="object-cover"
+                      className="object-contain"
+                      sizes="180px"
                   />
+                  </div>
                 </div>
               ))}
               {/* Duplicate the list to create a seamless infinite scroll effect */}
               {Partners.map((partner) => (
                 <div
                   key={`duplicate-${partner.id}`}
-                  className="relative w-[300px] h-[280px] "
+                  className="flex items-center justify-center p-4 bg-white/5 rounded-lg shadow-sm backdrop-blur-sm hover:scale-105 transition-transform duration-300"
                 >
+                  <div className="relative w-[180px] h-[90px]">
                   <Image
                     src={partner.image}
                     alt={partner.title}
                     fill
-                    className="object-cover"
+                      className="object-contain"
+                      sizes="180px"
                   />
+                  </div>
                 </div>
               ))}
             </div>
