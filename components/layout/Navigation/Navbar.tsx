@@ -91,7 +91,7 @@ const Navbar = () => {
           ))}
           <Button
             onClick={() => {
-              router.push("/#subsidiaries-details");
+              router.push("/contact-us");
             }}
             label="Contact Us"
             variant="primary"
