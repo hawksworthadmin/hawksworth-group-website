@@ -30,11 +30,11 @@ const LeadershipProfiles = async () => {
         <Link href={`/leadership/${leader.uid}`} key={index}>
             <article>
                 <div className="rounded-sm w-[20.375rem] h-[19.063rem] lg:w-[17rem] lg:h-[19.063rem] 2xl:w-[27.875rem] 2xl:h-[32.063rem] 3xl:w-[37.875rem] 3xl:h-[39.063rem] relative overflow-hidden mb-4 lg:mb-8">
-                    <Image
+                    <img
                         src={leader.data.avatar.url || '/profile.png'}
                         alt={`${leader.data.name}`}
-                        layout="fill"
-                        objectFit="cover"
+                        // layout="fill"
+                        // objectFit="cover"
                         className="rounded-sm object-cover w-full h-full"
                     />
                 </div>
