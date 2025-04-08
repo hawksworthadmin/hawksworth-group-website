@@ -1,9 +1,16 @@
 import {createClient} from "@/prismicio";
 import { PrismicRichText } from "@prismicio/react";
 
-export default async function ProfilePage({ params }: { params: { id: string } }) {
+type Props = {
+    params: Promise<{ id: string }>
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export default async function ProfilePage({ params }: Props) {
 
     const prismicClient = createClient();
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-expect-error
     const profile = await prismicClient.getByUID('people', params.id);
 
     return (
