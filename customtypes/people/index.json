@@ -1,11 +1,17 @@
 {
   "format": "page",
-  "id": "leadership",
-  "label": "leadership",
-  "repeatable": false,
+  "id": "people",
+  "label": "People",
+  "repeatable": true,
   "status": true,
   "json": {
     "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
       "avatar": {
         "type": "Image",
         "config": {
@@ -18,7 +24,7 @@
         "type": "Text",
         "config": {
           "label": "Name",
-          "placeholder": "Enter person's name"
+          "placeholder": ""
         }
       },
       "role": {

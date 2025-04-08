@@ -301,104 +301,104 @@ interface JobsDocumentData {
 export type JobsDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<JobsDocumentData>, "jobs", Lang>;
 
-type LeadershipDocumentDataSlicesSlice = never;
+type PeopleDocumentDataSlicesSlice = never;
 
 /**
- * Content for leadership documents
+ * Content for People documents
  */
-interface LeadershipDocumentData {
+interface PeopleDocumentData {
   /**
-   * Avatar field in *leadership*
+   * Avatar field in *People*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: leadership.avatar
+   * - **API ID Path**: people.avatar
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   avatar: prismic.ImageField<never>;
 
   /**
-   * Name field in *leadership*
+   * Name field in *People*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: Enter person's name
-   * - **API ID Path**: leadership.name
+   * - **Placeholder**: *None*
+   * - **API ID Path**: people.name
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   name: prismic.KeyTextField;
 
   /**
-   * Role field in *leadership*
+   * Role field in *People*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: leadership.role
+   * - **API ID Path**: people.role
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   role: prismic.KeyTextField;
 
   /**
-   * LinkedIn Profile URL field in *leadership*
+   * LinkedIn Profile URL field in *People*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: leadership.linkedin_profile_url
+   * - **API ID Path**: people.linkedin_profile_url
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   linkedin_profile_url: prismic.KeyTextField;
 
   /**
-   * Content field in *leadership*
+   * Content field in *People*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: leadership.content
+   * - **API ID Path**: people.content
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   content: prismic.RichTextField;
 
   /**
-   * Slice Zone field in *leadership*
+   * Slice Zone field in *People*
    *
    * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
-   * - **API ID Path**: leadership.slices[]
+   * - **API ID Path**: people.slices[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<LeadershipDocumentDataSlicesSlice> /**
-   * Meta Title field in *leadership*
+  slices: prismic.SliceZone<PeopleDocumentDataSlicesSlice> /**
+   * Meta Title field in *People*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: leadership.meta_title
+   * - **API ID Path**: people.meta_title
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */;
   meta_title: prismic.KeyTextField;
 
   /**
-   * Meta Description field in *leadership*
+   * Meta Description field in *People*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: leadership.meta_description
+   * - **API ID Path**: people.meta_description
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   meta_description: prismic.KeyTextField;
 
   /**
-   * Meta Image field in *leadership*
+   * Meta Image field in *People*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: leadership.meta_image
+   * - **API ID Path**: people.meta_image
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#image
    */
@@ -406,20 +406,16 @@ interface LeadershipDocumentData {
 }
 
 /**
- * leadership document from Prismic
+ * People document from Prismic
  *
- * - **API ID**: `leadership`
- * - **Repeatable**: `false`
+ * - **API ID**: `people`
+ * - **Repeatable**: `true`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type LeadershipDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<
-    Simplify<LeadershipDocumentData>,
-    "leadership",
-    Lang
-  >;
+export type PeopleDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<PeopleDocumentData>, "people", Lang>;
 
 type TestimonialsDocumentDataSlicesSlice = never;
 
@@ -534,7 +530,7 @@ export type AllDocumentTypes =
   | BlogsDocument
   | CategoriesDocument
   | JobsDocument
-  | LeadershipDocument
+  | PeopleDocument
   | TestimonialsDocument;
 
 declare module "@prismicio/client" {
@@ -567,9 +563,9 @@ declare module "@prismicio/client" {
       JobsDocument,
       JobsDocumentData,
       JobsDocumentDataSlicesSlice,
-      LeadershipDocument,
-      LeadershipDocumentData,
-      LeadershipDocumentDataSlicesSlice,
+      PeopleDocument,
+      PeopleDocumentData,
+      PeopleDocumentDataSlicesSlice,
       TestimonialsDocument,
       TestimonialsDocumentData,
       TestimonialsDocumentDataSlicesSlice,
