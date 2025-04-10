@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
         // Construct the email content with all form fields
         const mailOptions = {
             from: `"${firstName} ${lastName}" <${process.env.ZOHO_EMAIL_USER}>`,
-            to: process.env.RECIPIENT_EMAIL || 'chukwuemekaifeora@gmail.com',
+            to: process.env.RECIPIENT_EMAIL || 'admin@hawksworth.org',
             subject: `New Contact Form Submission - ${subject}`,
             text: `
 You have received a new message from ${firstName} ${lastName} (${email}):
