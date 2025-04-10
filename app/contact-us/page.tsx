@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/common/HeroSection";
 import StyledSection from "@/components/common/StyledSection";
-import ContactForm from "@/app/api/contact/contact-form";
+import ContactForm from "@/app/contact-us/contact-form";
 export const metadata: Metadata = {
     title: "Contact Us | Hawksworth Group",
 };
@@ -32,10 +32,10 @@ export default function ContactUsPage() {
                             <div>
                                 <h3 className="font-semibold mb-2">Contact Information</h3>
                                 <p className="text-gray-700 mb-1">
-                                    <span className="font-medium">Email:</span> info@hawksworth.org
+                                    <span className="font-medium">Email:</span> admin@hawksworth.org
                                 </p>
                                 <p className="text-gray-700 mb-1">
-                                    <span className="font-medium">Phone:</span> +234 123 456 7890
+                                    <span className="font-medium">Phone:</span> +234 813 362 2561
                                 </p>
                                 <p className="text-gray-700">
                                     <span className="font-medium">Hours:</span> Monday - Friday: 9am - 5pm
