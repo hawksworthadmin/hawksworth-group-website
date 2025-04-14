@@ -13,23 +13,17 @@ const TermsOfUse = () => {
 
   <HeroSection
         imageUrl="/assets/images/services-hero.webp"
-        header="Our Terms of Use"
+        header="Privacy Policy"
       />
 
-      {/* <StyledSection containerClassname="py-[120px] lg:px-[80px]">
-        <StyledHeaderText
-          text="Our Terms of Use"
-          textClassname="lg:text-4xl text-[22px]"
-          containerClassname="flex justify-center lg:mb-20 mb-6"
-        /> */}
+    
       {/* To display the pdf component */}
         <div className="space-y-12 lg:space-y-20">
         {/* <PdfViewer pdfUrl="/TermsOfUse.pdf" /> */}
         <iframe className="md:w-full w-screen"
-        src="https://ucarecdn.com/20d50648-b9c8-4354-9705-25a99af2daf0/TermsofUse.pdf"
-        title="Terms of Use"
+        src="https://ucarecdn.com/bee838e2-642a-4ba7-8250-d637fdd316ea/PrivacyPolicy.pdf"
+        title="Privacy Policy"
         style={{ height: '120vh', width: '100%' }}
-        frameBorder="0"
       />
 
         </div>
