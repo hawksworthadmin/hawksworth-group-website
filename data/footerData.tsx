@@ -96,8 +96,8 @@ export const footerCategories: FooterCategory[] = [
   {
     title: "Legal",
     links: [
-      { label: "Privacy Policy", href: "", rel: " ", target: "_self" },
-      { label: "Terms of Use", href: "", rel: " ", target: "_self" },
+      { label: "Privacy Policy", href: "/privacypolicy", rel: " ", target: "_self" },
+      { label: "Terms of Use", href: "/terms", rel: " ", target: "_self" },
     ],
   },
 ];
