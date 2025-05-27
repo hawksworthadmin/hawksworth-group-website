@@ -34,6 +34,13 @@
           "placeholder": ""
         }
       },
+      "country": {
+        "type": "Text",
+        "config": {
+          "label": "Country",
+          "placeholder": "Ex United Kingdom"
+        }
+      },
       "linkedin_profile_url": {
         "type": "Text",
         "config": {

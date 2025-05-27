@@ -341,6 +341,17 @@ interface PeopleDocumentData {
   role: prismic.KeyTextField;
 
   /**
+   * Country field in *People*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Ex United Kingdom
+   * - **API ID Path**: people.country
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  country: prismic.KeyTextField;
+
+  /**
    * LinkedIn Profile URL field in *People*
    *
    * - **Field Type**: Text
