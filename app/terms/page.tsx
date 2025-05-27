@@ -1,8 +1,8 @@
-import PdfViewer from "@/components/PdfViewer"; 
+// import PdfViewer from "@/components/PdfViewer";
 import HeroSection from "@/components/common/HeroSection";
-import StyledSection from "@/components/common/StyledSection";
-import StyledText from "@/components/common/StyledText";
-import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
+// import StyledSection from "@/components/common/StyledSection";
+// import StyledText from "@/components/common/StyledText";
+// import StyledHeaderText from "@/components/common/StyledText/StyledHeaderText";
 import React from "react";
 
 const TermsOfUse = () => {
