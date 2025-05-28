@@ -14,12 +14,7 @@ const LeadershipProfiles = async () => {
           next: { tags: ["prismic", "profiles"] },
         },
         limit: 30,
-        // orderings: [
-        //     {
-        //         field: "my.blog_post.published_on",
-        //         direction: "desc",
-        //     },
-        // ],
+        orderings: [{ field: "document.first_publication_date", direction: "asc" }],
       },
   );
 
