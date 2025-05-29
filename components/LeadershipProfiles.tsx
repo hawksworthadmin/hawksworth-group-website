@@ -1,7 +1,7 @@
 import React from "react";
 import {createClient} from "@/prismicio";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 const LeadershipProfiles = async () => {
 
@@ -26,11 +26,11 @@ const LeadershipProfiles = async () => {
               <Link href={`/leadership/${leader.uid}`} key={index} className={'w-full'}>
                   <article>
                       <div className="rounded-sm w-full h-[500px] min-h-[500px] relative overflow-hidden mb-4">
-                          <Image
+                          <img
                               src={leader.data.avatar.url || '/profile.png'}
                               alt={`${leader.data.name}`}
-                              layout="fill"
-                              objectFit="top"
+                              // layout="fill"
+                              // objectFit="top"
                               className="rounded-sm object-top w-full h-full"
                           />
                       </div>
