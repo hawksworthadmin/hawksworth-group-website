@@ -25,14 +25,18 @@ const LeadershipProfiles = async () => {
           {profiles.map((leader, index) => (
               <Link href={`/leadership/${leader.uid}`} key={index} className={'w-full'}>
                   <article>
-                      <div className="rounded-sm w-full h-[500px] min-h-[500px] relative overflow-hidden mb-4">
-                          <img
-                              src={leader.data.avatar.url || '/profile.png'}
-                              alt={`${leader.data.name}`}
-                              // layout="fill"
-                              // objectFit="top"
-                              className="rounded-sm object-top w-full h-full"
-                          />
+                      <div className="rounded-sm w-full h-[400px] min-h-[400px] relative overflow-hidden mb-4" style={{
+                          backgroundImage: `url(${leader.data.avatar.url || '/profile.png'})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'top'
+                      }}>
+                          {/*<Image*/}
+                          {/*    src={leader.data.avatar.url || '/profile.png'}*/}
+                          {/*    alt={`${leader.data.name}`}*/}
+                          {/*    layout="fill"*/}
+                          {/*    objectFit="top"*/}
+                          {/*    className="rounded-sm object-top w-full h-full"*/}
+                          {/*/>*/}
                       </div>
                       <p className="font-semibold text-2xl lg:text-xl  text-secondaryYellow text-center lg:text-start ">
                           {leader.data.name}
