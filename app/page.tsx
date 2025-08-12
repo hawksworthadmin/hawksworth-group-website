@@ -19,9 +19,7 @@ const subsidiaries = [
     name: "Hawksworth Advisors",
     href: "https://advisors.hawksworth.org",
   },
-  { name: "Hawksworth Insights", 
-    href: "https://insights.hawksworth.org/" 
-  },
+  { name: "Hawksworth Insights", href: "https://insights.hawksworth.org/" },
   {
     name: "Hawksworth Capital",
     href: "https://capital.hawksworth.org/",
@@ -39,9 +37,9 @@ export default function Home() {
     <>
       <HeroSection
         imageUrl="/assets/svg/hero.svg"
-        header="Empowering Businesses with Innovative Solutions Across "
-        subheader="Finance, Insights, Capital, and Ventures."
-        description="Hawksworth is a global leader in business advisory, investment, and innovation, serving industries with forward-thinking strategies and comprehensive services."
+        header="Enabling Growth and Transformation through "
+        subheader="Strategic Advisory, Capital Solutions, Market Insights, and Venture Development"
+        description="Hawksworth is a trusted partner in business advisory, investments, and innovation, combining international reach, cross-industry expertise, and transformative solutions that enable organisations to achieve sustainable growth, strengthen competitiveness, and lead in their market"
         button={
           <Button
             label="Explore our subsidiaries"
@@ -118,13 +116,13 @@ export default function Home() {
                   className="flex items-center justify-center p-4 bg-white/5 rounded-lg shadow-sm backdrop-blur-sm hover:scale-105 transition-transform duration-300"
                 >
                   <div className="relative w-[180px] h-[90px]">
-                  <Image
-                    src={partner.image}
-                    alt={partner.title}
-                    fill
+                    <Image
+                      src={partner.image}
+                      alt={partner.title}
+                      fill
                       className="object-contain"
                       sizes="180px"
-                  />
+                    />
                   </div>
                 </div>
               ))}
@@ -135,13 +133,13 @@ export default function Home() {
                   className="flex items-center justify-center p-4 bg-white/5 rounded-lg shadow-sm backdrop-blur-sm hover:scale-105 transition-transform duration-300"
                 >
                   <div className="relative w-[180px] h-[90px]">
-                  <Image
-                    src={partner.image}
-                    alt={partner.title}
-                    fill
+                    <Image
+                      src={partner.image}
+                      alt={partner.title}
+                      fill
                       className="object-contain"
                       sizes="180px"
-                  />
+                    />
                   </div>
                 </div>
               ))}
