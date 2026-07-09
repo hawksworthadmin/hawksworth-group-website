@@ -30,7 +30,7 @@ const LeadershipProfiles = async () => {
   });
 
   // console.log(profiles);
-  console.log(sortedProfiles);
+  // console.log(sortedProfiles);
 
   return (
     <section className="place-items-center- place-content-center  w-full max-w-[4000px] xl:max-w-[1500px] mx-auto ">
