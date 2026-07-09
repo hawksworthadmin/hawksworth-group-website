@@ -18,7 +18,7 @@ const LeadershipProfiles = async () => {
   const sortedProfiles = profiles.sort((a, b) => {
     const roleHierarchy: { [key: string]: number } = {
       "Global Managing Principal": 1,
-      "Africa Managing Principal": 2,
+      "Africa Managing Partner": 2,
       "Principal Advisor": 3,
       "Senior Advisor": 4,
       Partner: 5,
