@@ -10,8 +10,8 @@ type IconProps = {
 const WalletIcon = ({
   className,
   strokeColor = "#C49700",
-  height = 120,
-  width = 120,
+  height = 50,
+  width = 50,
 }: IconProps) => {
   return (
     <svg
